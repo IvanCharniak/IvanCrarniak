@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'HachiMaruPop-Regular';
+  src: url('HachiMaruPop-Regular.eot');
+  src: url('HachiMaruPop-Regular.eot?#iefix') format('embedded-opentype'),
+       url('HachiMaruPop-Regular.svg#HachiMaruPop-Regular') format('svg'),
+       url('HachiMaruPop-Regular.ttf') format('truetype'),
+       url('HachiMaruPop-Regular.woff') format('woff'),
+       url('HachiMaruPop-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
