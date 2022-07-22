@@ -1,0 +1,23 @@
+.aboba {
+background: url(RightTop.png) right top  no-repeat,
+url(LeftTopBorder.png) left top  no-repeat,
+url(RightBottom.png) right bottom no-repeat,
+url(LeftBottom.png) left bottom  no-repeat,
+url(LeftRightBorder.png) left top repeat-y,
+url(LeftRightBorder.png) 100.0899% 0% repeat-y,
+url(TopBottomBorder.png) 0% 0% repeat-x,
+url(TopBottomBorder.png)  0% 100.04% repeat-x;
+}
+
+div{
+    padding:95px
+}
+
+.block{
+    
+    border: 50px solid black;
+    border-image: url(ramka.png);
+    border-image-slice: 100;
+    border-image-repeat: stretch;
+    padding: 4px;
+}

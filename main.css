@@ -1,0 +1,22 @@
+div{
+    margin-top:auto;
+    margin:2vh;
+    border: red 1px;
+    padding: 2vh
+}
+a{
+    text-decoration: none;
+}
+body {
+    background: url(http://fe.it-academy.by/Sites/0040523/logo.png) 0px 0px repeat-y,
+                         url(http://fe.it-academy.by/Sites/0040523/logo.png) 100% 0% repeat-y;
+                         padding: 0% 195px;
+}
+h1{
+    text-align: center;
+}
+
+.img{
+    height: 14px;
+    width: 14px;
+}
