@@ -28,7 +28,7 @@
 
 }
 .background{
-    background-image: url("line.png");
+    background-image: url("line.PNG");
     background-repeat: repeat-y;
     background-position: left top;
     background-size: 150px 1px;
