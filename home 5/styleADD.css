@@ -1,0 +1,62 @@
+.header{
+    height: 50px;
+    background-color: rgb(168, 168, 250);
+    text-align:center;
+    vertical-align:middle;
+}
+
+.footer{
+    height: 50px;
+    background-color: rgb(168, 168, 250);
+    text-align: center;
+    clear:both;
+    vertical-align:middle;
+}
+
+.content{
+    padding: 10px;
+    background-position: right top;
+    background-repeat: repeat-y;
+    margin-left: 20%;
+    margin-right: 200px;
+    background: url(http://fe.it-academy.by/Sites/0040523/home5/ball.png) right top no-repeat,
+    url(http://fe.it-academy.by/Sites/0040523/home5/ball.png) left top no-repeat,
+    url(http://fe.it-academy.by/Sites/0040523/home5/ball.png) left bottom no-repeat,
+    url(http://fe.it-academy.by/Sites/0040523/home5/ball.png) right bottom no-repeat;
+}
+.menu{
+    width: 20%;
+    float:left;
+    background: url(http://fe.it-academy.by/Sites/0040523/home5/ball.png) right top no-repeat,
+    url(http://fe.it-academy.by/Sites/0040523/home5/ball.png) left top no-repeat;
+
+    background-color: rgb(207, 210, 30);
+
+
+}
+.background{
+    background-image: url(http://fe.it-academy.by/Sites/0040523/home5/ball.png),
+    url(http://fe.it-academy.by/Sites/0040523/home5/ball.png),
+    url("line.png"),url("line2.png");
+    background-repeat: no-repeat, no-repeat,repeat-y, repeat-y;
+    background-position: top 100% right 149px, top 100% right 0px, left top, right top;
+    background-size: 51px 49px,51px 49px, 20%, 200px 1px;
+    background-color: aqua;
+
+}
+
+.banner{
+    float:right;
+    width: 200px;
+    height:100%;
+    background: url(http://fe.it-academy.by/Sites/0040523/home5/ball.png) right top no-repeat,
+    url(http://fe.it-academy.by/Sites/0040523/home5/ball.png) left top no-repeat;
+}
+
+
+h2{
+    text-align: center;
+}
+img{
+    float:left;
+}

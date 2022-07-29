@@ -21,3 +21,24 @@ div{
     border-image-repeat: stretch;
     padding: 4px;
 }
+
+/* FOR 5.60*/
+.name{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.birth{
+    color: chartreuse;
+}
+
+.status {
+    color: red;
+    font-weight:bold;
+}
+
+.content{
+    white-space: pre-wrap;
+    font-style: italic;
+    color:blue
+}
