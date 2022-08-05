@@ -1,0 +1,14 @@
+
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+td{height: 40px;width: 40px;}
+
+tr:nth-child(even) td:nth-child(odd) {background-color: #000;}
+tr:nth-child(odd) td:nth-child(even){background-color: #000;}
+
+.chess tr:first-child td {background-color: greenyellow; border: 1px solid black; height: 15px;}
+.chess tr:last-child td {background-color: greenyellow; border: 1px solid black; height: 15px;}
+div.chess td:first-child {background-color: greenyellow; width: 10px; height: 10px; border: 1px solid black;}
+div.chess td:last-child {background-color: greenyellow; width: 10px; height: 10px; border: 1px solid black;}
