@@ -28,19 +28,17 @@
     width: 20%;
     float:left;
     background: url(http://fe.it-academy.by/Sites/0040523/home5/ball.png) right top no-repeat,
-    url(http://fe.it-academy.by/Sites/0040523/home5/ball.png) left top no-repeat;
-
-    background-color: rgb(207, 210, 30);
-
-
+    url(http://fe.it-academy.by/Sites/0040523/home5/ball.png) left top no-repeat
 }
 .background{
     background-image: url(http://fe.it-academy.by/Sites/0040523/home5/ball.png),
     url(http://fe.it-academy.by/Sites/0040523/home5/ball.png),
+    url(http://fe.it-academy.by/Sites/0040523/home5/ball.png) ,
+    url(http://fe.it-academy.by/Sites/0040523/home5/ball.png) ,
     url("line.PNG"),url("line2.PNG");
-    background-repeat: no-repeat, no-repeat,repeat-y, repeat-y;
-    background-position: top 100% right 149px, top 100% right 0px, left top, right top;
-    background-size: 51px 49px,51px 49px, 20%, 200px 1px;
+    background-repeat: no-repeat, no-repeat,no-repeat,no-repeat,repeat-y, repeat-y;
+    background-position: top 100% right 149px, top 100% right 0px, top 100% left 0px,top 100% left 17.6%, left top, right top;
+    background-size:51px 49px,51px 49px, 51px 49px,51px 49px, 20%, 200px 1px;
     background-color: aqua;
 
 }
