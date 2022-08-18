@@ -1,0 +1,9 @@
+@media all and (max-width:320px) {
+    .banner {
+        background-color: rgb(255, 255, 255);
+        float: left;
+        width: 440px;
+        clear: both;
+        background-color: #bfe5e5;
+    }
+}

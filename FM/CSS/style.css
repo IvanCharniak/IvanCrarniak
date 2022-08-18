@@ -1,6 +1,10 @@
+@import url("media.css");
+.body {
+    background-color: aqua;
+}
 .container {
     width: 1440px;
-    background-color: rgba(238, 235, 235, 0.541);
+    background-color: rgb(255, 255, 255);
     margin: 0 auto;
 }
 .clearfix {overflow: auto;}
@@ -249,17 +253,29 @@ color: #0B344B;
   float: right;
   width: 327px;
   margin-top: 18px;
-
+    
   background-image: url(../img/sprite2.png);
   background-position: 0% 75.5%;
   background-size: 269%;
   background-repeat: no-repeat;
   
-  padding-left: 33px;
+  margin-left: 33px;
   
+
 }
 
-
+.topheader input {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    border: none;
+    margin-left: 40px;
+    color: #0B344B;
+    
+    opacity: 0.44;
+}
 /* !!!!!!!!FOLDER!!!!!!!!!*/
 .folder{
     margin-top: 40px;
@@ -887,4 +903,15 @@ border:none
 
 .premium div span {
     color: #6A4BFF;
+}
+
+
+@media all and (max-width:500px) {
+    .banner {
+        background-color: rgb(255, 255, 255);
+        float: left;
+        width: 440px;
+        clear: both;
+        background-color: #bfe5e5;
+    }
 }
