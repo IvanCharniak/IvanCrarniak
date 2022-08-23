@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .clearfix {overflow: auto;}
+        .container {
+            margin: 10px 0px 0px 10px;
+        }
+        .state input {width: 90%;}
+        .state p{
+            float:lefy;
+            width: 80%;
+        }
+
+        .rubrika p, .rubrika select{float: left;}
+
+        .publication p {float: left;}
+
+        .text textarea {width: 99%;}  
+
+                        @media all and (max-width:700px) {
+                            * {float: none; }
+                            .publication p {display: inline-block;}
+                            p:after {content: "a"; display: block;}
+                        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        
+        <form action="https://fe.it-academy.by/TestForm.php">
+
+            <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
+
+            <div class="state clearfix">
+                <p>Название статьи: <input type="text" name="articleName"></p>
+                
+            </div>
+
+            <div class="rubrika clearfix">  <p>Рубрика:</p><br>
+                <select name="brunch">
+                    <option value="computer technics">компьютерная техника</option>
+                    <option value="Graphics_design">Графика и дизайн</option>
+                    <option value="programming" selected>Программирование</option>
+            </select></div>
+           
+            <div class="publication clearfix"> 
+                <p>Публикация</p>
+               <p> <input type="radio" name="publication" value="website"> на сайте </p>
+               <p> <input type="radio" name="publication" value="magazine"> в журнале      </p>
+               <p> <input type="radio" name="publication" value="website&magazine"> на сайте и в журнале </p>
+            </div>
+
+            <div class="comments">
+                    <p> Разрешить комментарии <input type="checkbox" selected name="allowComments" value="yes"></p>  
+             </div>
+             <div class="text"> <p>Текст статьи:</p>
+                <textarea name="articleText"  cols="30" rows="5"></textarea> <br></div>
+           
+            <input type="submit" value="Опубликовать">
+       </form>
+    </div>
+</body>
+</html>
