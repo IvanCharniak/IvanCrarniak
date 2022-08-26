@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    font-weight:bold ;
+    height: 50px;
+    background-color: rgb(168, 168, 250);
+    text-align:center;
+    padding-top: 14px;
+    
+}
+
+.footer{
+    font-weight:bold ;
+    height: 50px;
+    background-color: rgb(168, 168, 250);
+    text-align: center;
+    clear:both;
+    padding-top: 14px;
+}
+
+.content{
+    padding: 10px;
+    background-image: url(http://fe.it-academy.by/Sites/0040523/home5/ball.png);
+    background-position: right top;
+    background-repeat: repeat-y;
+}
+.menu{
+    padding-left: 18px;
+    padding-right: 18px;
+    background-color: rgb(30, 210, 195);
+}
+.background{
+    display: flex;
+}
+
+.menu p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    flex-grow:2;
+}
+h2{
+    text-align: center;
+    margin: 0;
+}
+img{
+    float:left;
+}
+
+@media all and (max-width:1000px) {
+    .footer, .header 
+          {display:none}
+    .background 
+         {flex-direction: column-reverse;}
+    .menu {
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    img{
+        float: none;
+        width:100%;
+        height: 150px; }
+
+    li{
+        float: left;
+        margin-left: 32px;}
+}
+

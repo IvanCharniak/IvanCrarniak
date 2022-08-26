@@ -9,23 +9,89 @@
         .container {
             margin: 10px 0px 0px 10px;
         }
-        .state input {width: 90%;}
+        .state {display: flex;}
+        .state input {width: 100%;}
         .state p{
             float:lefy;
-            width: 80%;
+            width: auto;
+        }
+        [for^='state'] {
+            float: left;
+        }
+        input[id='state'] {
+              width: 100%;
+              margin-left: 187px;
         }
 
-        .rubrika p, .rubrika select{float: left;}
+        .rubrika p {display: block; float: left;}
+        .rubrika select{margin-left: 242px;}
 
-        .publication p {float: left;}
+        .publication p{float: left;}
+        .publication p:nth-child(2) {margin-left: 214px;}
 
         .text textarea {width: 99%;}  
 
-                        @media all and (max-width:700px) {
-                            * {float: none; }
-                            .publication p {display: inline-block;}
-                            p:after {content: "a"; display: block;}
+        .comments input {display: none;}
+        .comments p {float: left;}
+        input + label {
+            width: 35px;
+            height: 15px;
+            background-color: red;
+            display: inline-block;
+            border-radius: 50px;
+            position: relative;
+            user-select: none;
+            transition: 40ms;
+            top: 20px;
+            margin-left: 135px;
+        }
+
+        input + label::before {
+            content: " ";
+            width: 13px;
+            height: 13px;
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 1px;
+            left: 1px;
+            transition: 640ms
+        }
+
+        input:checked + label {
+            background-color: green;
+        }
+
+        input:checked + label:before {
+            top: 1px;
+            left: 20px;
+            
+        }
+
+                        @media all and (max-width:750px) {
+                            input[id='state'] {
+                            width: 100%;
+                            margin-left: 0px;}
+
+                            .rubrika p {
+                            float: none;
+                            margin-bottom: 0;
                         }
+                        .rubrika select {
+                            margin-left: 0; 
+                        }
+                        .publication p {
+                            float: none;
+                            margin-left: 0;
+                            display: block;
+                        }
+                        .publication p:nth-child(2){
+                            margin-left: 0;
+                        }
+                        input+label{margin-left: 30px;}
+                        .state {display: block;}
+                        }
+                       
     </style>
     <title>Document</title>
 </head>
@@ -36,10 +102,12 @@
 
             <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
 
-            <div class="state clearfix">
-                <p>Название статьи: <input type="text" name="articleName"></p>
+           
+                <label for="state clearfix">Название статьи:</label>
                 
-            </div>
+                    <div class="state"><input id='state' type="text" name="articleName"></div>
+                
+          
 
             <div class="rubrika clearfix">  <p>Рубрика:</p><br>
                 <select name="brunch">
@@ -55,8 +123,11 @@
                <p> <input type="radio" name="publication" value="website&magazine"> на сайте и в журнале </p>
             </div>
 
-            <div class="comments">
-                    <p> Разрешить комментарии <input type="checkbox" selected name="allowComments" value="yes"></p>  
+            <div class="comments clearfix">
+                    <p> Разрешить комментарии </p>  
+                    
+                    <input type="checkbox"  name="allowComments" id="checkbox">
+                    <label for="checkbox"> </label>
              </div>
              <div class="text"> <p>Текст статьи:</p>
                 <textarea name="articleText"  cols="30" rows="5"></textarea> <br></div>
