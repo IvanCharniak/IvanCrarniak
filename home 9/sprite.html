@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes MyAnimation2
+{
+    from { background: url('imgbin.jpg') 0 0; }
+    to { background: url('imgbin.jpg') -3055px 0; } /* 462-66=396 */
+}
+
+.sprite
+{
+    width: 115px;
+    height: 171px;
+    animation: MyAnimation2 2s steps(25) infinite;
+}
+    </style>
+</head>
+<body>
+    <div class="sprite"></div>
+</body>
+</html>
