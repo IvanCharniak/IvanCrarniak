@@ -1,35 +1,41 @@
-@import url("media.css");
+
+a {
+    text-decoration: none;
+    
+}
+a:visited {
+    text-decoration: none;
+}
 .body {
     background-color: aqua;
 }
 .container {
+    display: flex;
     position: relative;
-    width: 1440px;
     background-color: rgb(255, 255, 255);
     margin: 0 auto;
 }
-.clearfix {overflow: auto;}
+
 
 div {border: 1px solid #00000000}
 
 .menu{
+    flex-basis: 225px;
+    flex-shrink: 4;
     background-color:#fff;
-    float: left;
-    width: 221px;
     position: relative;
 }
 
 .banner{
     background-color: rgb(255, 255, 255);
-    float: right;
-    width: 440px;
-}
+    flex-basis: 440px;
+    }
 
 .content {
     z-index: 1;
     position: relative;
-    margin-left: 261px;
-    margin-right: 480px;
+    flex-basis: 715px;
+   
 }
 .top{
     margin-left: 40px;
@@ -115,11 +121,21 @@ margin-left: 40px;
 margin-right: 40px;
 margin-top: 56.5px;
 }
-
+.list i {
+    color: #6058E9;
+   font-size: 20px;
+    margin-right: 10px;
+}
 .list li{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     margin-top: 46px;
 }
 .list ul{
+    display: flex;
+    flex-direction: column;
+    
     background-color: #fff;
     margin-left: 40px;
 }
@@ -148,87 +164,18 @@ background-repeat: no-repeat;
 
 padding-left: 33px;
 }
+.list ul li:nth-child(6){
+    margin-top: 200px;
+}
 
-.list ul li:nth-child(2){
-    display: inline-block;
-
-  
-  
-  background-image: url(../img/sprite.png);
-  background-position: -4% 49%;
-  background-size: 50%;
-  background-repeat: no-repeat;
-  
-  padding-left: 33px;
-  }
-
-  .list ul li:nth-child(3){
-    display: inline-block;
-  
-
-  
-  
-  background-image: url(../img/sprite.png);
-  background-position: 6% -0.2%;
-  background-size: 66%;
-  background-repeat: no-repeat;
-  
-  padding-left: 33px;
-  }
-
-  .list  li:nth-child(4){
-    display: inline-block;
-  
-  background-image: url(../img/sprite.png);
-  background-position: 0% 43.8%;
-  background-size: 43%;
-  background-repeat: no-repeat;
-  
-  padding-left: 33px;
-  }
-
-  .list  li:nth-child(5){
-    display: inline-block;
-  
-
-  
-  
-  background-image: url(../img/sprite.png);
-  background-position: 10% 61%;
-  background-size: 67%;
-  background-repeat: no-repeat;
-  
-  padding-left: 33px;
-  }
-
-  .list ul li:nth-child(6){
-    display: block;
-  
-  background-image: url(../img/sprite2.png);
-  background-position: 0% 85.1%;
-  background-size: 350%;
-  background-repeat: no-repeat;
-  
-  padding-left: 33px;
-  margin-top: 255px;
-  }
-
-  .list ul li:nth-child(7){
-    display: block;
-  
-  background-image: url(../img/sprite2.png);
-  background-position: 0% 80.1%;
-  background-size: 350%;
-  background-repeat: no-repeat;
-  
-  padding-left: 33px;
-  }
 
   .topheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 26px;
   }
   .topheader div:first-child{
-    float:left;
    
 font-family: 'Lexend';
 font-style: normal;
@@ -246,28 +193,22 @@ color: #0B344B;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    /* identical to box height */
-    
-    
+    margin-top: 7px;
     color: #0B344B;
-    
     opacity: 0.4;
 }
 .topheader div:last-child {
-  float: right;
   width: 327px;
-  margin-top: 18px;
-    
-  background-image: url(../img/sprite2.png);
-  background-position: 0% 75.5%;
-  background-size: 269%;
-  background-repeat: no-repeat;
-  
-  margin-left: 33px;
-  
-
 }
-
+.topheader i {
+    font-size: 15px;
+    color: #0B344B;
+    opacity: 0.3;
+}
+.topheader div:last-child{
+    display: flex;
+    align-items: center;
+}
 .topheader input {
     font-family: 'Lexend';
     font-style: normal;
@@ -275,48 +216,74 @@ color: #0B344B;
     font-size: 14px;
     line-height: 18px;
     border: none;
-    margin-left: 40px;
+    margin-left: 8px;
     color: #0B344B;
-    
+    width: 290px;
     opacity: 0.44;
 }
 /* !!!!!!!!FOLDER!!!!!!!!!*/
 .folder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 40px;
+    padding-left: 24px;
 }
 
 .folder div{
-    float: left;
     width: 216px;
 }
 
 .documents, .photo, .songs{
+    position: relative;
     margin-right: 17px;
 }
 .folder .documents{
     margin-right: 0px;
 }
-.photo span:first-child {
-    display: block;
-    width: 48px;
-    height: 48px;
-    background-image: url(../img/sprite.png);
-    background-position: -2% 34.5%;
-    background-size: 107%;
-    background-repeat: no-repeat;
+.photo i:first-child {
+    position: absolute;
+    font-size: 21px;
+    top: 24px;
+    left: 15px;
+    color: #6058E9;
 }
-.documents :nth-child(2),.photo :nth-child(2), .songs :nth-child(2) {
+.songs i:first-child{
+    position: absolute;
+    font-size: 21px;
+    top: 24px;
+    left: 15px;
+    color: #FF6E91;
+}
+.documents i:first-child {
+    position: absolute;
+    font-size: 21px;
+    top: 24px;
+    left: 15px;
+    color: #5BCDF8;
+}
+.documents span:first-child,.songs span:first-child, .photo span:first-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.photo i:last-child, .songs i:last-child, .documents i:last-child {
+    position: absolute;
+    right: 24px;
+    rotate: 90deg;
+    top: 25px;
+    opacity: 0.3;
+}
+
+.documents span:nth-child(2),.photo span:nth-child(2), .songs span:nth-child(2) {
     display: block;
-    margin-top: 24px;
-
+    margin-top: 96px;
     font-family: 'Lexend';
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 22px;
-
-
-color: #0B344B;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #0B344B;
 }
 .photo span:nth-child(3){
     display: block;
@@ -360,15 +327,7 @@ text-align: right;
 color: #0B344B;
 }
 
-.songs span:first-child {
-    display: block;
-    width: 48px;
-    height: 48px;
-    background-image: url(../img/sprite.png);
-    background-position: -2% 12.6%;
-    background-size: 107%;
-    background-repeat: no-repeat;
-}
+
 .songs span:nth-child(3){
     display: block;
     width: 174px;
@@ -381,15 +340,7 @@ color: #0B344B;
     margin-top: 15px;
 }
 
-.documents span:first-child {
-    display: block;
-    width: 48px;
-    height: 48px;
-    background-image: url(../img/sprite.png);
-    background-position: -2% 23.6%;
-    background-size: 107%;
-    background-repeat: no-repeat;
-}
+
 .documents span:nth-child(3){
     display: block;
     width: 174px;
@@ -403,25 +354,21 @@ color: #0B344B;
 }
 
 .folder  span:first-child {
-  
-
-font-family: 'Lexend';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 25px;
-
-
-color: #0B344B;
-
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #0B344B;
 }
 .folderHeader{
-  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 35px;
 }
 
 .shareHeader span:first-child, .filesHeader span:first-child, .accessHeader span:first-child, .folderHeader span:first-child{
-
 
 font-family: 'Lexend';
 font-style: normal;
@@ -432,10 +379,9 @@ line-height: 25px;
 color: #0B344B;
 }
 .accessHeader span:last-child, .folderHeader span:last-child{
-    margin-right: 32px;
+
     padding-right: 20px;
     display: block;
-    float: right;
     font-family: 'Lexend';
     font-style: normal;
     font-weight: 400;
@@ -443,42 +389,61 @@ color: #0B344B;
     line-height: 18px;  
             color: #0B344B; 
             opacity: 0.6;
-    
             background-image: url(../img/OpenList.svg);
             background-repeat: no-repeat;
             background-position: right center;
 }
 
-
 .accessHeader{
-  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-top: 35px;
 }
 .access{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     margin-top: 40px;
 }
 .access div {
     width: 162px;
     height: 144px;
-    float: left;
+   
     margin-right: 10px;
 }
 .access div span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
             margin-top: 104px;
             padding-top: 14px;
-            padding-left: 24px;
-   display: block;
    text-align: center;
    background-color: #fff;
    height: 27px; 
+   width: 164px;
 
             font-family: 'Lexend';
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
             line-height: 18px;
-
-
+}
+.access i {
+    font-size: 25px;
+    margin-right: 11px;
+}
+.fa-image {
+    color: #6058E9;
+}
+.fa-circle-play {
+ color: #FF6E91;
+}
+.fa-file {
+    color: #5BCDF8;
+}
+.fa-folder {
+color: #6058E9;
 }
 
 .access div:nth-child(1){
@@ -499,41 +464,16 @@ color: #0B344B;
     margin: 0px;
 }
 
-.access1 span{
-    background-image: url(../img/sprite.png);
-    background-position: 2px -630px;
-    background-size: 59%;
-    background-repeat: no-repeat;
-}
-.access2 span{
-    background-image: url(../img/sprite.png);
-    background-position: 2px -34px;
-    background-size: 60%;
-    background-repeat: no-repeat;
-}
-.access3 span{
-    background-image: url(../img/sprite.png);
-    background-position: 2px -441px;
-    background-size: 64%;
-    background-repeat: no-repeat;
-}
-.access4 span{
-    background-image: url(../img/sprite.png);
-    background-position: -21px -275px;
-    background-size: 64%;
-    background-repeat: no-repeat;
-}
-
 
 /* !!!CONTENT FILES BLOCK!!! */
 .filesHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-top: 35px;
 }
 .filesHeader span:last-child{
-    margin-right: 32px;
-    padding-right: 20px;
     display: block;
-    float: right;
     font-family: 'Lexend';
     font-style: normal;
     font-weight: 400;
@@ -611,23 +551,30 @@ color: #0B344B;
         max-width: 800px;
         margin: 27px 119px 0px 119px;
       }
-
+.bannerHeader div:first-child {
+    display: flex;
+    align-items: center;
+}
 .bannerHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 40px 40px 0px 40px;
     overflow: auto;
 }
 .bannerHeader span {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.bannerHeader span:first-child{
+.bannerHeader span:first-of-type{
+    margin-right: 8px;
     height: 40px;
     width: 40px;
     background-image: url(../img/pf.svg);
     background-repeat: no-repeat;
-
-    float: left;
 }
-.bannerHeader span:last-child{
+.bannerHeader span:last-of-type{
     height: 40px;
     width: 40px;
     background-image: url(../img/sprite.png);
@@ -635,21 +582,15 @@ color: #0B344B;
     background-position: 5px -456px;
     background-size: 223%;
 
-    float: right;
 }
-.bannerHeader span:nth-child(2){
+.bannerHeader span:nth-of-type(2){
     font-family: 'Lexend';
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 20px;
-/* identical to box height */
-
 color: #0B344B;
-float: left;
-
 margin-left: 8px;
-margin-top: 11px;
 }
 
 .bannerHeader span:nth-child(3){
@@ -665,6 +606,9 @@ background-image: url(../img/OpenList.svg);
 }
 
 .storageInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 40px 60px 0px 60px;
 
 }
@@ -676,7 +620,6 @@ background-image: url(../img/OpenList.svg);
     line-height: 20px;
 
     color: #0B344B;
-    float: left;
 }
 .storageInfo div span{
     font-family: 'Lexend';
@@ -684,23 +627,13 @@ background-image: url(../img/OpenList.svg);
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
-    /* identical to box height */
-    
-    
     color: #0B344B;
-    
     opacity: 0.5;
+    margin-top: 12px;
 }
+.storageInfo i {
+    opacity: 0.3;
 
-.storageInfo div:last-child {
-    display: block;
-    float: right;
-    width: 20px;
-    height: 40px;
-
-    background-image: url(../img/dotsHoriz.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 
 .diagram {
@@ -712,74 +645,123 @@ background-image: url(../img/OpenList.svg);
 
 .diagramLegend{
     margin: 40px 62px 0px 62px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.diagramLegend ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    position: relative;
 }
 .diagramLegend li {
+    position: relative;
     display: block;
-    float: left;
     margin-right: 40px;
     padding-left: 12px;
 }
 
-.files li:first-child{
-    background-image: url(../img/sprite2.png);
-    background-position: -94px -193px;
-    background-size: 1200%;
-    background-repeat: no-repeat;
+.files li:first-child::before{
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #675AE7;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: -2px;
 }
-.files li:nth-child(2){
-    background-image: url(../img/sprite2.png);
-    background-position: -96px -215px;
-    background-size: 1243%;
-    background-repeat: no-repeat;
+.files li:nth-child(2)::before{
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color:#FF6E91;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: -2px;
 }
-.files li:last-child{
-    background-image: url(../img/sprite2.png);
-    background-position: -104px -193px;
-    background-size: 907%;
-    background-repeat: no-repeat;
-    margin-right: 0;
+.files li:nth-child(3)::before{
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #5BCDF8;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: -2px;
 }
 
 .up_do{
+    display: flex;
+    align-items: center;
+   
     margin: 33px 40px 0px 40px;
 }
+.up_do div {
+    display: flex;
+   
+}
 .upl{
-    float: left;
-padding-left: 56px;
-background-image: url(../img/sprite2.png);
-background-position: -74px -240px;
-background-size: 544%;
-background-repeat: no-repeat;
 font-family: 'Lexend';
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
 line-height: 20px;
-/* identical to box height */
-
-
 color: #0B344B;
 }
-
+.upl i {
+    background-color: #6058E9;
+    font-weight: 900;
+     color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 12px;
+    text-align: center;
+    vertical-align: middle;
+    rotate: 270deg;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.upl > div, .downl >div {
+    display: flex;
+    flex-direction: column;
+}
+.downl div:last-child, .upl div:last-child{
+    margin-left: 18px;
+}
 .downl {
-    float: left;
+    
     margin-left: 36px;
-padding-left: 56px;
-background-image: url(../img/sprite2.png);
-background-position: -68px -266px;
-background-size: 534%;
-
-background-repeat: no-repeat;
-font-family: 'Lexend';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 20px;
-/* identical to box height */
-
-
-color: #0B344B;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #0B344B;
 }
+.downl i {
+    background-color:#FF6E91;;
+    font-weight: 900;
+     color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 12px;
+    text-align: center;
+    vertical-align: middle;
+    rotate: 90deg;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
 .up_do_span{
     font-family: 'Lexend';
 font-style: normal;
@@ -788,29 +770,40 @@ font-size: 12px;
 line-height: 15px;
 
 color: #0B344B;
-
+margin-top: 7px;
 opacity: 0.5;
 }
-.up_do button {
-    float:right;
-    width: 40px;
+.up_do button{
+    border: none;
+}
+.up_do button i {
+    background-color: #6058E9;
+    font-weight: 900;
+     color: white;
     height: 40px;
-    
-    background-image: url(../img/sprite2.png);
-    background-position: -78px -357px;
-    background-size: 1763%;
-    background-repeat: no-repeat;
-    border:none
+    width: 40px;
+    border-radius: 12px;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-left: 6px;
 }
 
+
+
 .shareHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 margin:33px 40px 0px 40px;
 }
 
 .shareHeader span:last-child{
-    margin-top: 5px;
     display: block;
-    float: right;
     font-family: 'Lexend';
     font-style: normal;
     font-weight: 400;
@@ -820,6 +813,9 @@ margin:33px 40px 0px 40px;
             opacity: 0.6;
 }
 .MediaShare {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 33px 40px 0px 40px;
     padding-left: 72px;
     background-image: url(../img/sprite2.png);
@@ -827,21 +823,30 @@ margin:33px 40px 0px 40px;
     background-size: 296%;
 }
 .DocumentShare {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     margin: 33px 40px 0px 40px;
-    padding-left: 72px;
-    background-image: url(../img/sprite2.png);
-    background-position: -104px -205px;
-    background-size: 296%;
 }
-.MediaShare div:first-child, .DocumentShare div:first-child{
+.DocumentShare > i {
+    margin-left: 34px;
+    color: #FF6E91;
+    font-size: 28px;
+    margin-right: 18px;
+}
+.DocumentShare div:last-child{
+    margin-left: 186px;
+}
+.MediaShare div:first-child, .DocumentShare div:first-of-type{
+    display: flex;
+    flex-direction: column;
     font-family: 'Lexend';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
-
     color: #0B344B;
-    float: left;
+
 }
 .MediaShare div span, .DocumentShare  div span{
     font-family: 'Lexend';
@@ -849,32 +854,20 @@ margin:33px 40px 0px 40px;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
-    /* identical to box height */
-    
-    
     color: #0B344B;
-    
     opacity: 0.5;
 }
 
-.MediaShare div:last-child, .DocumentShare  div:last-child {
-    display: block;
-    float: right;
-    width: 20px;
-    height: 40px;
-    background-image: url(../img/dotsHoriz.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-}
 
 .premium {
     margin: 29px 40px 0px 40px;
     padding-left: 24px  ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 .premium div {
-    float:left;
 
     font-family: 'Lexend';
     font-style: normal;
@@ -885,7 +878,6 @@ margin:33px 40px 0px 40px;
 
 }
 .premium button{
-    float: right;
     margin-right: 20px;
 
     height: 52px;
@@ -908,51 +900,71 @@ border:none
 .premium div span {
     color: #6A4BFF;
 }
-/*
+
 .menuHide {
+    display:none;
     z-index: 2;
     position: absolute;
-    top:50%;
+    left: -12px;
     background-color: #000;
     width: 20px;
-    height: 20px;
+    height: 1130px;
+    border-radius: 20px;
+    opacity: 0.3;
 }
 .bannerHide {
+    display:none;
     z-index: 2;
     position: absolute;
-    top:50%;
-    right: 0%;
+   left: 106%;
     background-color: #000;
+    height: 1130px;
     width: 20px;
-    height: 20px;
+    border-radius: 20px;
+    opacity: 0.3;
 }
-*/
 
 
-@media all and (max-width:650px) {
+
+@media all and (max-width:700px) {
+    .bannerHide, .menuHide {
+        display: block;
+    }
     .content {clear: both;}
     .menu {
-        float: none;
+        background-color: black;
+         display: none;
+         flex-basis: 225px;
+         flex-shrink: 4;
+         background-color: #fff;
+         position: fixed;
+         z-index: 4;
+        margin-left: 10px;
+         background-color: black;
+    }
+    .list ul {
+        background-color: black;
     }
     .container{
         width: 650px;
         margin: 0;
     }
     .banner {
-        float: none;
-        position: relative;
-        right: 0;
-        top: 0;
-        z-index: 3;
         display: none;
+        position: relative;
+        right: 468px;
+        top: 0;
+        z-index: 4;
         background-color: rgb(255, 255, 255);
-        float: left;
-        width: 440px;
-        clear: both;
         background-color: #bfe5e5;
+    }
+    .filesHeader span:last-child, .accessHeader span:last-child, .folderHeader span:last-child{
+        margin-right: 12px;
     }
 }
 
-.hide {display: block; }
+.hide {display: block;
+    }
+
 .marginOut {margin-left: 0;}
 .marginrightOut {margin-right: 0;}
