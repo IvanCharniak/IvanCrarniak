@@ -7,14 +7,14 @@ const banner = document.getElementById('banner')
 
 
 buttonOne.addEventListener('click', () => {
-    
+    buttonOne.classList.toggle('button1Move')
     menu.classList.toggle('hide');
     content.classList.toggle('marginOut');
 
 })
 
 buttonTwo.addEventListener('click', () => {
-    
+    buttonTwo.classList.toggle('button2Move')
     banner.classList.toggle('hide');
     content.classList.toggle('marginrightOut');
 
