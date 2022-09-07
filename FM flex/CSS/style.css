@@ -1013,6 +1013,8 @@ border:none
          background-color: #fff;
          position: fixed;
          z-index: 4;
+         width: 200px;
+         top:20%
     }
 
     .container{
@@ -1027,6 +1029,7 @@ border:none
         right: 1%;
         top: 0;
         z-index: 4;
+        top: 20%;
     }
     .filesHeader span:last-child, .accessHeader span:last-child, .folderHeader span:last-child{
         margin-right: 12px;
@@ -1045,7 +1048,7 @@ border:none
     border: 1px solid black;
     }
 .button1Move {
-    left: 128px;
+    left: 189px;
     z-index: 6;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -1053,7 +1056,7 @@ border:none
     border-bottom-right-radius: 0px;
     height: 643px;
     position: fixed;
-    top: 0px;
+    top: 20%;
     width: 12px;
 }
 .button2Move{
@@ -1063,9 +1066,36 @@ border:none
     border-bottom-left-radius: 0px;
     right: 429px;
     z-index: 5;
-    height: 912px;
-    top: 0px;
+    height: 830px;
+    top: 20%;
 }
 
 .marginOut {margin-left: 0;}
 .marginrightOut {margin-right: 0;}
+
+@media all and (max-width: 720px) {
+    .folder {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        padding-left: 24px;
+    }
+    .documents {
+        align-self: flex-end;
+    }
+    .topheader input {
+        width: 133px;
+    }
+    .access {
+        flex-wrap: wrap;
+    }
+    .access div:nth-child(1),.access div:nth-child(2){
+        margin-bottom: 10px;
+    }
+    .filesOverView ul{
+        margin-right: 0;
+    }
+
+}
