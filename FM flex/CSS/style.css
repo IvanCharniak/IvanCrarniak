@@ -628,7 +628,7 @@ margin-right: 16px;
     justify-content: space-between;
     margin: 40px 40px 0px 40px;
    
-}
+}   
 .bannerHeader span {
     display: flex;
     align-items: center;
@@ -975,7 +975,7 @@ border:none
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     display: none;
-    z-index: 2;
+    z-index: 4;
     position: fixed;
     left: -2px;
     background-color: #0000007a;
@@ -990,7 +990,7 @@ border:none
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     display:none;
-    z-index: 2;
+    z-index: 6;
     position: fixed;
    right: 1%;
     background-color:#0000007a;
@@ -1005,6 +1005,7 @@ border:none
 @media all and (max-width:1000px) {
     .bannerHide, .menuHide {
         display: block;
+        background-color: #858585;
     }
     .content {
         width: 98vw;
@@ -1021,7 +1022,12 @@ border:none
          overflow: scroll;
          height: 90vh;
     }
-
+    .access * {
+        scale: 1.07;
+    }
+    .folder * {
+        scale: 1.1
+    }
     .container{
       width: auto;
         margin: 0 auto;
@@ -1033,7 +1039,7 @@ border:none
         position: fixed;
         right: 1%;
         top: 0;
-        z-index: 4;
+        z-index: 5;
         overflow: scroll;
         height: 90vh;
     }
@@ -1055,7 +1061,7 @@ border:none
     }
 .button1Move {
     left: 189px;
-    z-index: 6;
+    z-index: 5;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 0px;
@@ -1072,16 +1078,20 @@ border:none
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     right: 429px;
-    z-index: 5;
+    z-index: 6;
     height: 830px;
     height: 90vh;
     top: 0;
+    width: 12px;
 }
 
 .marginOut {margin-left: 0;}
 .marginrightOut {margin-right: 0;}
 
 @media all and (max-width: 720px) {
+    .banner{
+        width: 59vw;
+    }
     .folder {
         display: flex;
         flex-wrap: wrap;
@@ -1105,5 +1115,48 @@ border:none
     .filesOverView ul{
         margin-right: 0;
     }
-
+    .bannerHeader{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .storageInfo{
+        margin-left: 22px;
+        margin-right: 22px;    
+    }
+    .canvas {
+        justify-content: center;
+        display: flex;
+        max-width: 800px;
+        margin: 27px 36px 0px 36px;
+    }
+    .diagramLegend ul{
+        flex-wrap: wrap;
+    }
+    .up_do button{
+        display: none;
+    }
+    .shareHeader {
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+    .premium, .DocumentShare {
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+    .MediaShare {
+        margin-left: 37px;
+        background-position: -4px 10px;
+        background-size: 20%;
+    }
+    .DocumentShare div:last-child {
+        margin-left: 82px;
+    }
+    .button2Move{
+        right: 58vw;
+    }
+    @media all and (max-width:400px) {
+        .filesOverView ul li{
+            font-size: 10px;
+        }
+    }
 }
