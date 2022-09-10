@@ -999,7 +999,31 @@ border:none
     top: 50%;
     text-align: center;
 }
-
+.button1Move {
+    left: 189px;
+    z-index: 5;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    height: 643px;
+    position: fixed;
+    width: 12px;
+    height: 90vh;
+    top: 0;
+}
+.button2Move{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    right: 429px;
+    z-index: 6;
+    height: 830px;
+    height: 90vh;
+    top: 0;
+    width: 12px;
+}
 
 
 @media all and (max-width:1000px) {
@@ -1042,6 +1066,7 @@ border:none
         z-index: 5;
         overflow: scroll;
         height: 90vh;
+        width: 59vw;
     }
     .filesHeader span:last-child, .accessHeader span:last-child, .folderHeader span:last-child{
         margin-right: 12px;
@@ -1053,37 +1078,16 @@ border:none
     .list ul li:nth-child(6){
         margin-top: 50px;
     }
+    .button2Move {
+        right: 59vw;
+    }
 }
 
 .hide {
     display: block;
     border: 1px solid black;
     }
-.button1Move {
-    left: 189px;
-    z-index: 5;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    height: 643px;
-    position: fixed;
-    width: 12px;
-    height: 90vh;
-    top: 0;
-}
-.button2Move{
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    right: 429px;
-    z-index: 6;
-    height: 830px;
-    height: 90vh;
-    top: 0;
-    width: 12px;
-}
+
 
 .marginOut {margin-left: 0;}
 .marginrightOut {margin-right: 0;}
