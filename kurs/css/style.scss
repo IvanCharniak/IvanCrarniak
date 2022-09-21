@@ -1,0 +1,808 @@
+@import "variables.scss";
+@import "default.scss";
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+    height: 57px;
+    background: url('../img/Union.svg') no-repeat left 8px center;
+
+        .menu {
+            margin-left: 106px;
+            font-weight: $medium;
+            text-transform: uppercase;
+            line-height: 17px;
+
+               &>  ul{
+                    display:flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-around;
+
+                        li{
+                            margin-right: 70px;
+                        }
+                }
+                p {
+                    margin-bottom: 0;
+                }
+           
+        }
+        .icons {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            img{
+                position: relative;
+                display: inline-block;
+                margin-right: 18px;
+            }
+            
+            &::after{
+                content: "3";
+                color: $white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                background-color:$black;
+                border-radius: 50%;
+                top: -8px;
+                right: 6px;
+                height: 20px;
+                width: 20px;
+
+            }
+        }
+    
+}
+
+.sale{
+    margin-top: 81px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    h1 {
+        font-size: $f60;
+        line-height: 73px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: $black;
+    }
+    a {
+        display: inline-block;
+        font-family: $inter;
+        font-weight: $light;
+        font-size: $f14;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        color: $black;
+        margin-top: 15px;
+        border-bottom: 1px solid black;
+    }
+    img {
+        display: block;
+        margin-top: 27px;
+    }
+
+
+}
+
+.novinkiHeader, .akciiHeader, .bestSellersHeader, .joinHeader, .brandsHeader{
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    h2{
+        font-weight: $medium;
+        font-size: $f23;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+    }
+    
+}
+
+.novinki {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    div {
+        
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        
+        font-family: 'Montserrat';
+        
+        font-weight:$medium;
+
+        line-height: 175%;
+        text-transform: uppercase;
+    }
+    div:nth-child(1){
+        background: url('../img/novinki1.png') no-repeat top 25px center
+    }
+    div:nth-child(2){
+        background: url('../img/novinki2.png') no-repeat top 25px center
+    }
+    div:nth-child(3){
+        background: url('../img/novinki3.png') no-repeat top 25px center
+    }
+    div:nth-child(4){
+        background: url('../img/novinki4.png') no-repeat top 25px center
+    }
+}
+
+.akcii {
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p{
+            font-weight: $medium;
+
+            line-height: 17px;
+            text-transform: uppercase;
+            }
+        span {
+            font-family: $inter;
+            font-weight: $light;
+            line-height: 140%;
+            color: #5A5A5A;
+            margin-top: 10px;
+            display: block;
+        }
+        img:last-child{
+            scale: 1.5;
+        }
+    }
+}
+
+.bestSellers{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    div {
+        width: 210px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 248px;
+        font-weight:$medium;
+        line-height: 175%;
+        text-transform: uppercase;
+    }
+    div:nth-child(1){
+        background: url('../img/best1.png') no-repeat top 25px center
+    }
+    div:nth-child(2){
+        background: url('../img/best2.png') no-repeat top 25px center
+    }
+    div:nth-child(3){
+        background: url('../img/best3.png') no-repeat top 25px center
+    }
+    div:nth-child(4){
+        background: url('../img/best4.png') no-repeat top 25px center
+    }
+}
+
+.join {
+    color: $white;
+    div:nth-child(2){
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img{display: inline-block;}
+    }
+    i {
+        color: $white;
+        font-size: 22px;
+    }
+}
+.joinSocial {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;    
+
+    i{margin-right: 5px;}
+}
+.brands {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    img {
+        display: inline-block;    
+    }
+}
+
+.footer {
+    margin-top: 1500px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    ul  li{
+        position: relative;
+        font-family: $inter;
+        font-weight: $light;
+        font-size: $f14;
+        line-height: 140%;
+        color: #5A5A5A;
+        margin-bottom: 15px;
+    }
+    ul li:first-child {
+        color: $black;
+        font-weight: $medium;
+        font-size: $f14;
+        line-height: 17px;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+    input {
+        border: none;
+    }
+    img{
+        scale: 0.5;
+    }
+    label {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+    }
+}
+
+.footerLine{
+    padding-bottom: 28px;
+    color: $white;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: $inter;
+    line-height: 17px;
+
+    div:first-child {
+        border-bottom: 1px solid $white;
+    }
+    i{ 
+        color: $white;
+        font-size: 30px;
+    }
+    i:first-child{
+        margin-right: 28px;
+    }
+}
+
+
+// Product page 
+body{background: none;
+height: 4000px;}
+.path {
+margin-top: 57px;
+font-family: $inter;
+font-weight: $light;
+line-height: 17px;
+color: #5A5A5A;
+opacity: 0.6;
+    span {
+        font-weight: $normal;
+    }
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    .photo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .describtion{
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            height: 600px;
+            h3 {
+                white-space: wrap;
+                font-size: $f37;
+                line-height: 45px;
+            }
+            &>div:nth-child(2) {
+                margin-top: 60px;
+                display: flex;
+                p{
+                    display: inline-block;
+                    font-weight: $medium;
+                    font-size: $f23;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                }
+                p:nth-child(2) {
+                    text-decoration: line-through;
+                    opacity: 0.7;
+                    margin-left: 20px;
+                }
+            }
+            div:nth-child(3) {
+                margin-top: 40px;
+                font-weight: $medium;
+                font-size: $f14;
+                line-height: 17px;
+                text-transform: uppercase;
+                display: flex;
+                justify-content: flex-start;
+
+                span:first-child {
+                    margin-left: 47px;
+                }
+            }
+            & > div:last-of-type {
+                margin-top: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                button{
+                    background-color: $black;
+                    width: 480px;
+                    height: 50px;
+                    color:$white;
+                    border: none;
+
+                    font-weight: $medium;
+                    line-height: 17px;
+                    text-transform: uppercase;
+                    margin-right: 25px;
+                }
+                img{scale: 1.3;}
+            }
+        
+            & > p:last-of-type{
+                display: block;
+                margin-top: 60px;
+                font-weight:$medium;
+                line-height: 17px;
+                text-transform: uppercase;
+            }
+            ul {
+                list-style-type: disc;
+                font-family: $inter;
+                font-weight: $light;
+                line-height: 140%;
+                color: #5A5A5A;
+                margin-top: 20px;
+
+                li{
+                    margin-top: 10px;
+                }
+            }
+            }
+        
+    
+} 
+.miniatures{
+    height: 189px;
+    display: flex;
+    align-items: center;
+    img:nth-child(2) {
+        scale: 0.4
+    }
+}
+.reflectHeader {
+    margin-top: 159px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+
+    div:first-child{
+        font-style: normal;
+        font-weight: $medium;
+        font-size: $f23;
+        line-height: 28px;
+        text-transform: uppercase;
+        margin-right: 30px;
+
+        span {
+            font-family: $inter;
+            font-size: $f14;
+            font-weight: $light;
+            line-height: 140%;
+            color: #5A5A5A;
+        }
+    }
+    div:nth-child(3){
+        margin-left: 10px;
+        margin-right: 180px;
+        font-weight: $semi-bold;
+        line-height: 17px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    div:last-child {
+        border-bottom: 1px solid $black;
+    }
+    
+
+}
+.rate {
+    display: flex;
+    flex-direction: row-reverse;
+    .star{
+        width: 20px;
+        height: 20px;
+        background: url('../img/StarE.png');
+}
+        .star:hover{
+            background: url('../img/StarF.png')
+}
+        .star:hover ~ a{
+            background: url('../img/StarF.png')
+}
+
+}
+.reflect {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+
+    .name {
+        font-family: $inter;
+        font-weight: $light;
+        line-height: 140%;
+        color: #5A5A5A;
+    }  
+    & > div:nth-child(2){
+        margin-left: 570px;
+        font-weight: $medium;
+        line-height: 17px;
+        text-transform: uppercase;
+        
+       .rotate{
+            display: flex;
+
+            .rate {
+                margin-left: 20px;
+            }
+        }
+    }
+    .text{
+        font-family: $inter;
+        font-weight: $light;
+        line-height: 140%;
+        color: #5A5A5A;
+        white-space: pre-line;
+        text-transform: none;
+    }
+    div:last-child{
+        font-family: $inter;
+        font-weight: $normal;
+        line-height: 17px;
+        color: $black;
+        text-transform: none;
+
+    }
+}
+
+
+// caral
+
+.row div {
+    background-color: $white;
+  
+}
+.dropdown-menu > div .form-check {
+    padding-left: 0;
+}
+button.commonButton {
+    width: 200px;
+    text-align: left;
+    border: none;
+
+}
+.form-check > span {
+    font-family: $inter;
+    font-style: normal;
+    font-weight: $light;
+    font-size: 14px;
+    line-height: 140%;
+    color: #5A5A5A;
+}
+.form-check .form-check-input {
+    width: 260px;
+    position: absolute;
+    float: left;
+    margin-left: -1.5em;
+    height: 20px;
+    opacity: 0;
+}
+.form-check-input:checked[type=checkbox] + .texto {
+    font-weight: 600;
+}
+.catalogFilter > div.dropdown{
+margin-bottom: 27px;
+}
+button.dropdown-toggle::after {
+    position: absolute;
+    right: 0;
+  width: 19px;
+  height: 9px;  
+  display: inline-block;
+  vertical-align: 0.255em;
+  content: " ";
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  background: url('../img/open.svg') no-repeat;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1A1A1A;
+}
+ul.dropdown-menu{
+    --bs-dropdown-border-color: $white;
+    position: static !important;
+}
+.btn-secondary {
+    color: $black;
+ --bs-btn-bg: #ffffff;
+ border: none;
+}
+.btn:hover , .btn:active, .btn:focus{
+background-color: #fff;
+}
+
+
+.catalogItem{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    font-weight: $medium;
+    font-size: $f14;
+    line-height: 17px;
+    text-transform: uppercase;
+
+        img{
+            align-self: center;
+        }
+        span{
+            margin-top: 10px;
+        }
+}
+.viewMore{
+    width: 860px;
+    color: white;
+    border: none;
+    background-color: black;
+    margin-top: 100px;
+    height: 50px;
+}
+.brandHeader {
+    font-size: $f60;
+    margin-top: 70px;
+}
+.filterHeader{
+    margin-top: 70px;
+    margin-bottom: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    div {
+        display: flex;
+        align-items: center;
+
+        i{
+            color:#5A5A5A;
+            font-size: $f14;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+
+}
+
+.pages{
+    position: relative;
+    margin-top: 41px;
+    display: flex;
+    justify-content: center;
+    &>span:first-child, &>span:last-child{
+        font-weight: $medium;
+        line-height: 17px;
+        text-transform: uppercase;
+    }
+
+    &>div {
+        margin-left: 40px;
+        margin-right: 40px;
+        a {
+            margin-right: 10px;
+            
+            span{
+            border-bottom: 1px solid $black;
+        }
+    }
+    }
+
+    &::after {
+        content: " ";
+        height: 10px;
+        width: 20px;
+        background: url(../img/open.svg) no-repeat;
+        display: inline-block;
+        rotate: 270deg;
+        position: absolute;
+        top: 2px;
+        right: 248px;
+    }
+    &::before {
+        content: " ";
+        height: 10px;
+        width: 20px;
+        background: url(../img/open.svg) no-repeat;
+        display: inline-block;
+        rotate: 90deg;
+        position: absolute;
+        top: 5px;
+        left: 247px;
+    }
+}
+
+// buttons menu 
+
+.btn-primary {
+    &:active, &focus, &hover{
+        color: black;
+        background-color: #fff;
+    }
+    COLOR: BLACK;
+    background-color: WHITE;
+    BORDER: NONE;
+    WIDTH: AUTO;
+    HEIGHT: AUTO;
+}
+.btn:focus, .btn:hover, .btn:active {
+    box-shadow: none;
+    border-bottom: 1px solid $black;
+    color: black;
+        background-color: #fff;
+}
+.btn:hover{
+    color: $black;
+}
+
+.card{
+    position: absolute;
+    width: 100vw;
+    top: 100px;
+    left: 1px;
+    z-index: 10;
+    margin: 0 auto;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+}
+.catalogCollapse {
+    display: flex;
+
+    & ul li, & ul li a {
+        margin-top: 20px;
+        text-transform: none;
+        font-family: $inter;
+font-weight: $light;
+font-size: 14px;
+line-height: 140%;
+color:$black
+
+    }
+    & ul li:first-child a{
+        color:#C8102E;
+        margin-bottom: 40px;
+    }
+    & ul:last-child li:first-child {
+        margin-top: 59px;
+        margin-bottom: 0;
+        color: $black
+        a{color: $black;}
+    }
+    
+}
+
+.BrandsCollapse {
+    display: flex;
+    margin-bottom: 70px;
+    ul {
+        margin-right: 33px;
+        width: 232px;
+    }
+    ul:last-child {
+        margin-right: 0;
+    }
+    & ul li {
+        margin-bottom: 10px;
+        font-family: $inter;
+        font-weight: $light;
+        font-size: 14px;
+        line-height: 140%;
+    }
+    & ul li:first-child {
+        margin-bottom: 20px;
+        font-size:$f23 ;
+    }
+}
+
+div.myCardCard{
+    position: absolute;
+    width: 57vw;
+    top: 100px;
+    left: 516px;
+}
+
+.myCardCollapse{
+
+    .cardImg{
+        width: 400px;
+        height: 250px;
+        border: 1px solid $black;
+        border-radius: 20px;
+        position: relative;
+        padding: 30px;
+    }
+    P:first-child{
+        font-family: $inter;
+        font-weight: $light;
+        font-size: $f14;
+        line-height: 140%;
+        color: #5A5A5A;
+    }
+    p:nth-child(2) {
+        font-weight: $medium;
+        font-size: $f23;
+        line-height: 28px;
+        margin-top: 15px;
+    }
+    p:last-child {
+        font-family: $inter;
+        font-weight: $light;
+        font-size: $f14;
+        line-height: 140%;
+        color: #5A5A5A;
+
+        position: absolute;
+        bottom: 0px;
+        left: 30px;
+    }
+}
