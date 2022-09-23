@@ -8,8 +8,6 @@ body {
   font-size: 14px;
   color: #1A1A1A;
   font-weight: 400;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(69%, white), color-stop(69%, black), color-stop(86%, black), color-stop(86%, white), color-stop(98%, white), color-stop(95%, black), to(black));
-  background: linear-gradient(180deg, white 0%, white 69%, black 69%, black 86%, white 86%, white 98%, black 95%, black 100%);
   text-decoration: none;
   color: black;
 }
@@ -34,6 +32,33 @@ a {
   color: #1A1A1A;
 }
 
+.brands img:hover, .icons img:hover {
+  scale: 0.95;
+  -webkit-box-shadow: 1px;
+          box-shadow: 1px;
+  -webkit-transition: 700ms;
+  transition: 700ms;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+.btn:hover {
+  scale: 0.95;
+  -webkit-box-shadow: 1px;
+          box-shadow: 1px;
+  -webkit-transition: 700ms;
+  transition: 700ms;
+}
+
+.novinki div:hover {
+  border: 0.5px solid black;
+}
+
+.brands img:hover {
+  border-bottom: 1px solid black;
+  border-radius: 1px;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,20 +66,21 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   padding-top: 12px;
   height: 57px;
-  background: url("../img/Union.svg") no-repeat left 8px center;
 }
 .header .menu {
-  margin-left: 106px;
   font-weight: 500;
   text-transform: uppercase;
   line-height: 17px;
+  font-size: 16px;
+  opacity: 0.9;
 }
 .header .menu > ul {
+  margin-bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,7 +190,7 @@ a {
 }
 
 .novinkiHeader, .akciiHeader, .bestSellersHeader, .joinHeader, .brandsHeader {
-  margin-top: 75px;
+  padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -304,7 +330,10 @@ a {
 }
 
 .join {
+  background-color: #1A1A1A;
   color: #ffffff;
+  margin-top: 62px;
+  margin-bottom: 60px;
 }
 .join div:nth-child(2) {
   margin-top: 50px;
@@ -324,6 +353,17 @@ a {
 .join i {
   color: #ffffff;
   font-size: 22px;
+}
+
+.joinImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .joinSocial {
@@ -362,7 +402,7 @@ a {
 }
 
 .footer {
-  margin-top: 1500px;
+  margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -403,6 +443,10 @@ a {
 }
 
 .footerLine {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #1A1A1A;
   padding-bottom: 28px;
   color: #ffffff;
   margin-top: 40px;
@@ -681,10 +725,6 @@ body {
   text-transform: none;
 }
 
-.row div {
-  background-color: #ffffff;
-}
-
 .dropdown-menu > div .form-check {
   padding-left: 0;
 }
@@ -960,13 +1000,25 @@ ul.dropdown-menu {
   font-size: 23px;
 }
 
-div.myCardCard {
-  position: absolute;
-  width: 57vw;
-  top: 100px;
-  left: 516px;
+div.fio > div {
+  font-weight: 400;
+  font-size: 37px;
+  line-height: 45px;
+  margin-left: 319px;
+  margin-top: 110px;
+  margin-bottom: 70px;
 }
 
+div.profileFrame {
+  position: absolute;
+  width: 38vw;
+  top: 329px;
+  left: 890px;
+}
+
+.myCardCollapse {
+  margin-bottom: 85px;
+}
 .myCardCollapse .cardImg {
   width: 400px;
   height: 250px;
@@ -997,6 +1049,56 @@ div.myCardCard {
   position: absolute;
   bottom: 0px;
   left: 30px;
+}
+
+div.bonusCard {
+  font-family: "Inter", "sans-serif";
+  font-size: 14px;
+  line-height: 140%;
+  margin-bottom: 27px;
+}
+
+.bonusCardInfo {
+  font-weight: 300;
+}
+
+.dropdown-menu {
+  position: static !important;
+  --bs-dropdown-border-color: $white;
+  margin-top: 13px;
+  width: 430px;
+  padding-left: 6px;
+}
+
+.cardButton {
+  width: 500px;
+  position: relative;
+  border: none;
+  text-align: left;
+}
+
+@media all and (max-width: 1000px) and (min-width: 200px) {
+  .header > a img {
+    position: absolute;
+    left: 15vw;
+    top: 77px;
+  }
+
+  .icons {
+    position: absolute;
+    top: 70px;
+    right: 15vw;
+  }
+
+  .header {
+    position: relative;
+  }
+}
+#search {
+  display: none;
+  position: absolute;
+  top: 29px;
+  right: 7px;
 }
 
 /*# sourceMappingURL=style.css.map */

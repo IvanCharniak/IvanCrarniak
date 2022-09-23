@@ -1,9 +1,15 @@
-@media all and (max-width:320px) {
-    .banner {
-        background-color: rgb(255, 255, 255);
-        float: left;
-        width: 440px;
-        clear: both;
-        background-color: #bfe5e5;
-    }
-}
+@media all and (max-width: 1000px) and (min-width: 200px) {
+  .header > a img {
+    position: absolute;
+    left: 15vw;
+    top: 77px; }
+
+  .icons {
+    position: absolute;
+    top: 70px;
+    right: 15vw; }
+
+  .header {
+    position: relative; } }
+
+/*# sourceMappingURL=media.css.map */

@@ -1,0 +1,18 @@
+.brands img:hover, .icons img:hover {
+    scale:0.95;
+    box-shadow: 1px;
+    transition: 700ms;
+    transform: rotate(-5deg);
+}
+.btn:hover {
+    scale:0.95;
+    box-shadow: 1px;
+    transition: 700ms;
+}
+.novinki div:hover {
+    border:0.5px solid black
+}
+.brands img:hover{
+    border-bottom: 1px solid black;
+    border-radius: 1px;
+}

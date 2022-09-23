@@ -1,21 +1,24 @@
 @import "variables.scss";
 @import "default.scss";
+@import "animation.scss";
 
 .header{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-top: 12px;
     height: 57px;
-    background: url('../img/Union.svg') no-repeat left 8px center;
 
         .menu {
-            margin-left: 106px;
+            
             font-weight: $medium;
             text-transform: uppercase;
             line-height: 17px;
+            font-size: 16px;
+            opacity: 0.9;
 
                &>  ul{
+                     margin-bottom: 0;
                     display:flex;
                     flex-direction: row;
                     align-items: center;
@@ -96,7 +99,7 @@
 }
 
 .novinkiHeader, .akciiHeader, .bestSellersHeader, .joinHeader, .brandsHeader{
-    margin-top: 75px;
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -204,7 +207,11 @@
 }
 
 .join {
+    background-color: $black;
     color: $white;
+    margin-top: 62px;
+    margin-bottom: 60px;
+
     div:nth-child(2){
         margin-top: 50px;
         display: flex;
@@ -217,6 +224,11 @@
         color: $white;
         font-size: 22px;
     }
+}
+.joinImg {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .joinSocial {
     margin-top: 30px;
@@ -239,7 +251,7 @@
 }
 
 .footer {
-    margin-top: 1500px;
+    margin-top: 100px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -275,6 +287,10 @@
 }
 
 .footerLine{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: $black;
     padding-bottom: 28px;
     color: $white;
     margin-top: 40px;
@@ -514,10 +530,8 @@ opacity: 0.6;
 
 // caral
 
-.row div {
-    background-color: $white;
   
-}
+
 .dropdown-menu > div .form-check {
     padding-left: 0;
 }
@@ -714,6 +728,7 @@ background-color: #fff;
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
+    
 }
 .catalogCollapse {
     display: flex;
@@ -764,15 +779,23 @@ color:$black
     }
 }
 
-div.myCardCard{
+div.fio > div {
+font-weight: 400;
+font-size: 37px;
+line-height: 45px;
+margin-left: 319px;
+margin-top: 110px;
+margin-bottom: 70px;
+}
+div.profileFrame{
     position: absolute;
-    width: 57vw;
-    top: 100px;
-    left: 516px;
+    width: 38vw;
+    top: 329px;
+    left: 890px;
 }
 
 .myCardCollapse{
-
+    margin-bottom: 85px;
     .cardImg{
         width: 400px;
         height: 250px;
@@ -805,4 +828,40 @@ div.myCardCard{
         bottom: 0px;
         left: 30px;
     }
+}
+
+div.bonusCard{
+    font-family: $inter;
+    font-size: 14px;
+    line-height: 140%;
+    margin-bottom: 27px;
+
+   
+}
+.bonusCardInfo {
+    font-weight: $light;
+}
+.dropdown-menu {
+    position: static!important;
+    --bs-dropdown-border-color: $white;
+    margin-top: 13px;
+    width: 430px;
+    padding-left: 6px;
+
+}
+.cardButton {
+    width: 500px;
+    position: relative;
+    border: none;
+    text-align: left;
+}
+
+
+@import 'media.scss';
+
+#search{
+    display: none;
+    position: absolute;
+    top: 29px;
+    right: 7px;
 }
