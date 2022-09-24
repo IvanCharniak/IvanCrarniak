@@ -1,0 +1,21 @@
+@media all and (max-width: 1060px) and (min-width: 200px) {
+  .header > a img {
+    position: absolute;
+    left: 15vw;
+    top: 77px; }
+
+  .icons {
+    position: absolute;
+    top: 70px;
+    right: 15vw; }
+
+  .header {
+    position: relative; } }
+@media all and (max-width: 1199px) and (min-width: 200px) {
+  .novinki div {
+    align-items: center; } }
+@media all and (max-width: 930px) and (min-width: 200px) {
+  .header .menu ul li {
+    margin-right: 0; } }
+
+/*# sourceMappingURL=media.css.map */

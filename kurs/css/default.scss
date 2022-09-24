@@ -1,0 +1,41 @@
+@import 'variables.scss';
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: $montserrat;
+    font-size: $f14;
+    color: $black;
+    font-weight: $normal;
+    text-decoration: none;
+    color: black;
+}
+.containerM{
+    margin: 0 auto;
+    width: 1217px;
+}
+.containerL{
+    margin: 0 auto;
+    width: 1920px;
+}
+.containerS{
+    margin: 0 auto;
+    width: 1045px;
+}
+
+@mixin polosa($top) {
+    content:"";
+    width: 45px;
+    height: 3px;
+    margin-top: 48;
+    position: absolute;
+    top: $top;
+    left: auto;
+    right: auto;
+    background-color: #F9C859;
+}
+a{
+    text-decoration: none;
+    color:$black
+}
+    
