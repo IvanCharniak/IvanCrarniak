@@ -28,13 +28,13 @@
                     <ul>
                         <li>
                             <p>
-                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <a class="btn btn-primary collapseCatalog" id="catalogCollapse" data-bs-toggle="collapse" href="#collapseCatalog" role="button" aria-expanded="false" aria-controls="collapseCatalog">
                                   Каталог
                                 </a>
                                
                               </p>
-                              <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
+                              <div class="collapse" id="collapseCatalog">
+                                <div class="card card-body catalogCard" id="catalogCard">
                                     <div class="container">
                                         <div class="row">
                                           <div class="col-xl-12 catalogCollapse">
@@ -85,13 +85,13 @@
                         </li>
                         <li>
                             <p>
-                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseBrands" role="button" aria-expanded="false" aria-controls="collapseBrands">
+                                <a class="btn btn-primary collapseBrands" id="brandsCollapse"data-bs-toggle="collapse" href="#collapseBrands" role="button" aria-expanded="false" aria-controls="collapseBrands">
                                   БРЕНДЫ
                                 </a>
                                
                               </p>
                               <div class="collapse" id="collapseBrands">
-                                <div class="card card-body">
+                                <div class="card card-body" id="brandsCard">
                                     <div class="container">
                                         <div class="row">
                                           <div class="col-xl-12 BrandsCollapse">
@@ -212,13 +212,13 @@
                         </li>
                         <li>
                             <p>
-                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <a class="btn btn-primary collapseColor"id="colorCollapse" data-bs-toggle="collapse" href="#collapseColor" role="button" aria-expanded="false" aria-controls="collapseColor">
                                   ПАЛИТРА
                                 </a>
                                
                               </p>
-                              <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
+                              <div class="collapse" id="collapseColor">
+                                <div class="card card-body" id="colorCard">
                                     <div class="container">
                                         <div class="row">
                                           <div class="col-xl-12 catalogCollapse">
@@ -269,13 +269,13 @@
                         </li>
                         <li>
                             <p>
-                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <a class="btn btn-primary collapseMarket" id="marketCollapse"data-bs-toggle="collapse" href="#collapseMarket" role="button" aria-expanded="false" aria-controls="collapseMarket">
                                   МАГАЗИНЫ
                                 </a>
                                
                               </p>
-                              <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
+                              <div class="collapse" id="collapseMarket">
+                                <div class="card card-body" id="marketCard">
                                     <div class="container">
                                         <div class="row">
                                           <div class="col-xl-12 catalogCollapse">
@@ -409,8 +409,8 @@
             
         </div>
         
-        <div class="row">
-            <div class="bestSellers">
+        <div class="row bestSellers">
+           
                 <div class="col-xl-3">
                     TM Grape professional, franch base №7 (50g) 
                     <span>850 ₽</span> 
@@ -427,7 +427,7 @@
                     Beautix, UniGel System №1003
                     <span>1 800 ₽ ₽</span> 
                 </div>
-            </div>
+           
         </div>
 
         <div class="join">
@@ -458,49 +458,65 @@
                 <img src="img/arrowR.svg" alt="">
             </div>
         </div>
-        <div class="row">
-            <div class="col-xl-12 brands">
+        <div class="row brands">
+            <div class="col-xl-2 ">
                 <img src="img/brands1.png" alt="">
-                <img src="img/brands2.png" alt="">
+            </div>
+            <div class="col-xl-2">
                 <img src="img/brands3.png" alt="">
+            </div>
+            <div class="col-xl-2">
+                <img src="img/brands2.png" alt="">
+            </div>
+            <div class="col-xl-2">
                 <img src="img/brands4.png" alt="">
+            </div>
+            <div class="col-xl-2">
                 <img src="img/brands5.png" alt="">
             </div>
         </div>
         
         
-        <div class="footer">
-            <ul>
-                <li>Магазины</li>
-                <li>г. Пенза, Урицкого/Славы 74/9 <br>тел: 8(967)441-00-23</li>
-                <li>г. Пенза, 1-й пр. Онежского, 4 <br>ТЦ Онежский, 2 этаж<br> тел: 8(967)442-85-35</li>
-            </ul>
-            <ul>
-                <li>Контакты</li>
-                <li><a href="#">ditanails@yandex.ru</a></li>
-                <li><a href="#">ditanails-opt@yandex.ru</a></li>
-                <li>8(967)441-00-23</li>
-            </ul>
-            <ul>
-                <li><a href="#">Покупателям</a> </li>
-                <li><a href="#">Оплата и доставка</a></li>
-                <li><a href="#">Возврат</a></li>
-            </ul>
-            <ul>
-                <li>Подписаться на нашу рассылку</li>
-                <li>
-                    <label for="Email"><img src="img/arrowR.svg" alt=""></label>
-                    <input id="Email" type="text" placeholder="E-mail">
-                    <hr>
-                </li>
-                <li> 
-                    
-                    <input type="checkbox"> Да, я хочу получать новости и рекламу <br> 
-                    сайта ditanails.ru по email, и я прочитал,<br> 
-                    понял и принимаю раздел <span>политика <br>
-                        конфиденциальности</span>  этого сайта.
-                </li>
-            </ul>
+        <div class="row footer">
+           <div class="col-xl-3">
+                <ul>
+                    <li>Магазины</li>
+                    <li>г. Пенза, Урицкого/Славы 74/9 <br>тел: 8(967)441-00-23</li>
+                    <li>г. Пенза, 1-й пр. Онежского, 4 <br>ТЦ Онежский, 2 этаж<br> тел: 8(967)442-85-35</li>
+                </ul>
+           </div>
+           <div class="col-xl-3">
+                <ul>
+                    <li>Контакты</li>
+                    <li><a href="#">ditanails@yandex.ru</a></li>
+                    <li><a href="#">ditanails-opt@yandex.ru</a></li>
+                    <li>8(967)441-00-23</li>
+                </ul>
+           </div>
+           <div class="col-xl-3">
+                <ul>
+                    <li><a href="#">Покупателям</a> </li>
+                    <li><a href="#">Оплата и доставка</a></li>
+                    <li><a href="#">Возврат</a></li>
+                </ul>
+           </div>
+           <div class="col-xl-3">
+                <ul>
+                    <li>Подписаться на нашу рассылку</li>
+                    <li>
+                        <label for="Email"><img src="img/arrowR.svg" alt=""></label>
+                        <input id="Email" type="text" placeholder="E-mail">
+                        <hr>
+                    </li>
+                    <li> 
+                        
+                        <input type="checkbox"> Да, я хочу получать новости и рекламу <br> 
+                        сайта ditanails.ru по email, и я прочитал,<br> 
+                        понял и принимаю раздел <span>политика <br>
+                            конфиденциальности</span>  этого сайта.
+                    </li>
+                </ul>
+           </div>
         </div>
 
         <div class="footerLine">
@@ -522,12 +538,35 @@
   integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
   crossorigin="anonymous"></script>
     <script>
-        console.log('aa')
         $('#serch').on('click', function (){
             $('#search').css('display','block')
-
+        })
+        $('#brandsCollapse').on('click', function(){
+            $('#brandsCard').css('display', 'flex')
+            $('#catalogCard').css('display', 'none')
+            $('#marketCard').css('display', 'none')
+            $('#colorCard').css('display', 'none')
+        })
+        $('#catalogCollapse').on('click', function(){
+            $('#catalogCard').css('display', 'flex')
+            $('#brandsCard').css('display', 'none')
+            $('#marketCard').css('display', 'none')
+            $('#colorCard').css('display', 'none')
+        })
+        $('#colorCollapse').on('click', function(){
+            $('#colorCard').css('display', 'flex')
+            $('#catalogCard').css('display', 'none')
+            $('#marketCard').css('display', 'none')
+            $('#brandsCard').css('display', 'none')
+        })
+        $('#marketCollapse').on('click', function(){
+            $('#marketCard').css('display', 'flex')
+            $('#catalogCard').css('display', 'none')
+            $('#brandsCard').css('display', 'none')
+            $('#colorCard').css('display', 'none')
         })
         
     </script>
+    <script type="text/javascript" src="script/script.js"></script>
 </body>
 </html>

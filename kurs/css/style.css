@@ -397,6 +397,20 @@ a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+.brands > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
 .brands img {
   display: inline-block;
 }
@@ -412,6 +426,18 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.footer > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
 }
 .footer ul li {
   position: relative;
@@ -461,9 +487,6 @@ a {
           justify-content: space-between;
   font-family: "Inter", "sans-serif";
   line-height: 17px;
-}
-.footerLine div:first-child {
-  border-bottom: 1px solid #ffffff;
 }
 .footerLine i {
   color: #ffffff;
@@ -723,6 +746,10 @@ body {
   line-height: 17px;
   color: #1A1A1A;
   text-transform: none;
+}
+
+.hide {
+  display: none;
 }
 
 .dropdown-menu > div .form-check {
@@ -1077,7 +1104,7 @@ div.bonusCard {
   text-align: left;
 }
 
-@media all and (max-width: 1000px) and (min-width: 200px) {
+@media all and (max-width: 1060px) and (min-width: 200px) {
   .header > a img {
     position: absolute;
     left: 15vw;
@@ -1092,6 +1119,18 @@ div.bonusCard {
 
   .header {
     position: relative;
+  }
+}
+@media all and (max-width: 1199px) and (min-width: 200px) {
+  .novinki div {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media all and (max-width: 930px) and (min-width: 200px) {
+  .header .menu ul li {
+    margin-right: 0;
   }
 }
 #search {

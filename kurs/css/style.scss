@@ -240,6 +240,14 @@
     i{margin-right: 5px;}
 }
 .brands {
+    &>div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        margin-right: 20px;
+        margin-bottom: 40px;
+    }
     margin-top: 50px;
     display: flex;
     align-items: center;
@@ -256,6 +264,12 @@
     align-items: flex-start;
     justify-content: space-between;
 
+    &>div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+    }
     ul  li{
         position: relative;
         font-family: $inter;
@@ -301,9 +315,7 @@
     font-family: $inter;
     line-height: 17px;
 
-    div:first-child {
-        border-bottom: 1px solid $white;
-    }
+    
     i{ 
         color: $white;
         font-size: 30px;
@@ -530,7 +542,9 @@ opacity: 0.6;
 
 // caral
 
-  
+  .hide{
+    display: none;
+  }
 
 .dropdown-menu > div .form-check {
     padding-left: 0;
