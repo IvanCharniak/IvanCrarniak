@@ -4,65 +4,349 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="css/reset.css"> 
-    <link rel="stylesheet" href="css/style.css"> 
-    <link rel="stylesheet" href="style.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="img/Union.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/15cb4d0923.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Montserrat:wght@400;500&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css"> 
+    <title>DitaNails - Каталог</title>
+</head>
     
     <title>Document</title>
-</head>
+
 <body>
-    <div class="containerM">
+    <div class="container">
 
-        <div class="header">
-           
-            <div class="menu">
-                <ul>
-                    <li>
-                        <a href="#">Каталог</a>
-                    </li>
-                    <li>
-                        <a href="#">Бренды</a>
-                    </li>
-                    <li>
-                        <a href="#">Палитра</a>
-                    </li>
-                    <li>
-                        <a href="#">магазины</a>
-                    </li>
-                    <li>
-                        <a href="#">Акции</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 header">
+                <a href="main.html"><img src="img/Union.svg" alt="DitaNails"></a>
+                <div class="menu">
+                    
+                    <ul>
+                        <li>
+                            <p>
+                                <a class="btn btn-primary collapseCatalog" id="catalogCollapse" data-bs-toggle="collapse" href="#collapseCatalog" role="button" aria-expanded="false" aria-controls="collapseCatalog">
+                                  Каталог
+                                </a>
+                               
+                              </p>
+                              <div class="collapse" id="collapseCatalog">
+                                <div class="card card-body catalogCard" id="catalogCard">
+                                    
+                                        <div class="row">
+                                          <div class="col-xl-12 catalogCollapse">
+                                            <ul>
+                                                <li> <a href="#">Распродажа</a></li>
+                                                <li> <a href="#">Слайдеры</a></li>
+                                                <li> <a href="#">Гель-лак</a></li>
+                                                <li> <a href="#">Жидкости</a></li>
+                                                <li> <a href="#">Стемпинг</a></li>
+                                                <li> <a href="#">Пилки</a></li>
+                                                <li> <a href="#">Уз мойки и сухожары</a></li>
+                                                <li> <a href="#">Акрил</a></li>
+                                                <li> <a href="#">Кисти</a></li>
+                                                <li> <a href="#">Гель</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li> <a href="#">Все категории </a></li>
+                                                <li> <a href="#">Акрил</a></li>
+                                                <li> <a href="#">Дизайн</a></li>
+                                                <li> <a href="#">Подставки педикюрные и маникюрные </a></li>
+                                                <li> <a href="#">Акригель и полигель </a></li>
+                                                <li> <a href="#">Инструменты </a></li>
+                                                <li> <a href="#">Пылесосы </a></li>
+                                                <li> <a href="#">Аппараты </a></li>
+                                                <li> <a href="#">Кисти </a></li>
+                                                <li> <a href="#">Файлы и основы STALEKS PRO </a></li>
+                                            </ul>
+                                            <ul>
+                                                <li> <a href="#">Аксессуары</a> </li>
+                                                <li> <a href="#">Краски</a> </li>
+                                                <li> <a href="#">Файлы и основы SMART</a> </li>
+                                                <li> <a href="#">Рециркуляторы воздуха</a> </li>
+                                                <li> <a href="#">Лампы LED</a> </li>
+                                                <li> <a href="#">Титановые нити</a> </li>
+                                                <li> <a href="#">Лаки Solar Gel Kinetics</a> </li>
+                                                <li> <a href="#">Боры, фрезы и колпачки</a> </li>
+                                                <li> <a href="#">Гель</a> </li>
+                                                <li> <a href="#">Одноразовая продукция</a> </li>
+                                                <li> <a href="#">Аксессуары</a> </li>
+                                            </ul>
 
-            <div class="icons">
-                <img src="img/search.svg" alt="">
-                <img src="img/profile.svg" alt="">
-                <img src="img/like.svg" alt="">
-                <img src="img/shop.svg" alt="">
+
+                                          </div>
+                                        </div>
+                                    
+                                </div>
+                              </div>
+                        </li>
+                        <li>
+                            <p>
+                                <a class="btn btn-primary collapseBrands" id="brandsCollapse"data-bs-toggle="collapse" href="#collapseBrands" role="button" aria-expanded="false" aria-controls="collapseBrands">
+                                  БРЕНДЫ
+                                </a>
+                               
+                              </p>
+                              <div class="collapse" id="collapseBrands">
+                                <div class="card card-body" id="brandsCard">
+                                    
+                                        <div class="row">
+                                          <div class="col-xl-12 BrandsCollapse">
+                                            <ul>
+                                                <li> <a href="#">A</a></li>
+                                                <li> <a href="#">Adele</a></li>
+                                                <li> <a href="#">Arnelle</a></li>
+                                                <li> <a href="#">Archdale</a></li>
+                                                <li> <a href="#">Artex</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li> <a href="#">B</a></li>
+                                                <li> <a href="#">Bagheera Nails</a></li>
+                                                <li> <a href="#">Be Natural</a></li>
+                                                <li> <a href="#">Beautix</a></li>
+                                                <li> <a href="#">Bloom</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li> <a href="#">C</a></li>
+                                                <li> <a href="#">Codyson</a></li>
+                                                <li> <a href="#">Cosmoprofi</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li> <a href="#">D</a></li>
+                                                <li> <a href="#">DispoLand</a></li>
+                                                <li> <a href="#">DIVA</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li> <a href="#">E</a></li>
+                                                <li> <a href="#">Emil</a></li>
+                                                <li> <a href="#">ENVY</a></li>
+                                            </ul>
+                                          </div>
+
+                                          <div class="col-xl-12 BrandsCollapse">
+                                            <ul>
+                                                <li> <a href="#">F</a></li>
+                                                <li> <a href="#">Fantasy Nails</a></li>
+                                                <li> <a href="#">Farmona</a></li>
+                                                <li> <a href="#">First Gel</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li> <a href="#">G</a></li>
+                                                <li> <a href="#">Gellaktik</a></li>
+                                                <li> <a href="#">Global Fashion</a></li>
+                                                <li> <a href="#">Grattol</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li> <a href="#">I</a></li>
+                                                <li> <a href="#">IBDI Nails</a></li>
+                                                <li> <a href="#">IBX System</a></li>
+                                                <li> <a href="#">Imen</a></li>
+                                                <li> <a href="#">Ingarden</a></li>
+                                                <li> <a href="#">IRISK</a></li>
+                                                <li> <a href="#">IVA Nails</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li> <a href="#">J</a></li>
+                                                <li> <a href="#">Jas</a></li>
+                                                <li> <a href="#">Ju.Bilej</a></li>
+                                                <li> <a href="#">Judi Nails</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li> <a href="#">K</a></li>
+                                                <li> <a href="#">Kinetics</a></li>
+                                                <li> <a href="#">KLIO</a></li>
+                                                <li> <a href="#">Kodi</a></li>
+                                            </ul>
+                                          </div>
+                                          
+                                          <div class="col-xl-12 BrandsCollapse">
+                                            <ul>
+                                                <li> <a href="#">L</a></li>
+                                                <li> <a href="#">LAQUE </a></li>
+                                                <li> <a href="#">Lesly</a></li>
+                                                <li> <a href="#">Lianail</a></li>
+                                                <li> <a href="#">LiNTO</a></li>
+                                                <li> <a href="#">Lovely</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li> <a href="#">M</a></li>
+                                                <li> <a href="#">Marathon </a></li>
+                                                <li> <a href="#">Memoire</a></li>
+                                                <li> <a href="#">Metaleks</a></li>
+                                                <li> <a href="#">MiLK</a></li>
+                                                <li> <a href="#">MIO Nails</a></li>
+                                                <li> <a href="#">Mirage</a></li>
+                                                <li> <a href="#">Miranda</a></li>
+                                                <li> <a href="#">Monami</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li> <a href="#">N</a></li>
+                                                <li> <a href="#">Nail Best </a></li>
+                                                <li> <a href="#">Nail Passion</a></li>
+                                                <li> <a href="#">Nartist</a></li>
+                                                <li> <a href="#">NeoNail</a></li>
+                                                <li> <a href="#">MIO Nails</a></li>
+                                                <li> <a href="#">NitriMax</a></li>
+                                                <li> <a href="#">No name</a></li>
+                                                <li> <a href="#">Monami</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li> <a href="#">O</a></li>
+                                                <li> <a href="#">OneAir</a></li>
+                                                <li> <a href="#">OneNail</a></li>
+                                                <li> <a href="#">ONIQ</a></li>
+                                                <li> <a href="#">Option</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li> <a href="#">P</a></li>
+                                                <li> <a href="#">Pole</a></li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                    
+                                </div>
+                              </div>
+                        </li>
+                        <li>
+                            <p>
+                                <a class="btn btn-primary collapseColor"id="colorCollapse" data-bs-toggle="collapse" href="#collapseColor" role="button" aria-expanded="false" aria-controls="collapseColor">
+                                  ПАЛИТРА
+                                </a>
+                               
+                              </p>
+                              <div class="collapse" id="collapseColor">
+                                <div class="card card-body" id="colorCard">
+                                    <div class="container">
+                                        <div class="row">
+                                          <div class="col-xl-12 catalogCollapse">
+                                            <ul>
+                                                <li> <a href="#">Распродажа</a></li>
+                                                <li> <a href="#">Слайдеры</a></li>
+                                                <li> <a href="#">Гель-лак</a></li>
+                                                <li> <a href="#">Жидкости</a></li>
+                                                <li> <a href="#">Стемпинг</a></li>
+                                                <li> <a href="#">Пилки</a></li>
+                                                <li> <a href="#">Уз мойки и сухожары</a></li>
+                                                <li> <a href="#">Акрил</a></li>
+                                                <li> <a href="#">Кисти</a></li>
+                                                <li> <a href="#">Гель</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li> <a href="#">Все категории </a></li>
+                                                <li> <a href="#">Акрил</a></li>
+                                                <li> <a href="#">Дизайн</a></li>
+                                                <li> <a href="#">Подставки педикюрные и маникюрные </a></li>
+                                                <li> <a href="#">Акригель и полигель </a></li>
+                                                <li> <a href="#">Инструменты </a></li>
+                                                <li> <a href="#">Пылесосы </a></li>
+                                                <li> <a href="#">Аппараты </a></li>
+                                                <li> <a href="#">Кисти </a></li>
+                                                <li> <a href="#">Файлы и основы STALEKS PRO </a></li>
+                                            </ul>
+                                            <ul>
+                                                <li> <a href="#">Аксессуары</a> </li>
+                                                <li> <a href="#">Краски</a> </li>
+                                                <li> <a href="#">Файлы и основы SMART</a> </li>
+                                                <li> <a href="#">Рециркуляторы воздуха</a> </li>
+                                                <li> <a href="#">Лампы LED</a> </li>
+                                                <li> <a href="#">Титановые нити</a> </li>
+                                                <li> <a href="#">Лаки Solar Gel Kinetics</a> </li>
+                                                <li> <a href="#">Боры, фрезы и колпачки</a> </li>
+                                                <li> <a href="#">Гель</a> </li>
+                                                <li> <a href="#">Одноразовая продукция</a> </li>
+                                                <li> <a href="#">Аксессуары</a> </li>
+                                            </ul>
+
+
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                        </li>
+                        <li>
+                            <p>
+                                <a class="btn btn-primary collapseMarket" id="marketCollapse"data-bs-toggle="collapse" href="#collapseMarket" role="button" aria-expanded="false" aria-controls="collapseMarket">
+                                  МАГАЗИНЫ
+                                </a>
+                               
+                              </p>
+                              <div class="collapse" id="collapseMarket">
+                                <div class="card card-body" id="marketCard">
+                                        <div class="row">
+                                          <div class="col-xl-12 catalogCollapse">
+                                            <div style="position:relative;overflow:hidden;"><a href="https://yandex.by/maps/org/ditanails/113332988970/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ditanails</a><a href="https://yandex.by/maps/49/penza/category/beauty_salon_equipment/184106734/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Оборудование и материалы для салонов красоты в Пензе</a><iframe src="https://yandex.by/map-widget/v1/-/CCUVnRToPB" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                                          </div>
+                                        </div>
+                                    
+                                </div>
+                              </div>
+                        </li>
+                        <li>
+                            <a href="#">Акции</a>
+                        </li>
+                    </ul>
+                </div>
+        
+                <div class="icons">
+                    <form id='search' action="">
+                        
+                        <input type="text" placeholder="Search...">
+                    </form>
+                    <img src="img/search.svg" id="serch" alt="">
+                    <a href="profile.html"><img src="img/profile.svg" alt=""></a>
+                    <img src="img/like.svg" alt="">
+                    <img src="img/shop.svg" alt="">
+                </div>
             </div>
         </div>
 
-        <div class="path">
-            Главная \ Гель \ Бренды \ TM Grape \  <span>Grape, Гель-паста Print Gel фуксия №10 (5 г)</span> 
-        </div>
-
-
-        <div class="main">
-            <div class="photo">
-                <img src="img/Product Big.png" alt="">
+        <div class="row">
+            <div class=" col-xl-12 path">
+               <a href="main.html">Главная</a>  \ Гель \ Бренды \ TM Grape \  <span>Grape, Гель-паста Print Gel фуксия №10 (5 г)</span> 
             </div>
-            <img src="img/arrowR.svg" alt="">
-            <div class="describtion">
+        </div>  
+
+        <div class="row main">
+            <div class="col-xl-6 photo">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/Product Big.png" class="d-block w-100" alt="Фото товара">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/catalogItems/item5.png" style="width: 500px; height:500px" class="d-block w-100" alt="Фото товара">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/catalogItems/item3.png" style="width: 500px; height:500px"class="d-block w-100" alt="Фото товара">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Предыдущий</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Следующий</span>
+                    </button>
+                  </div>
+            </div>
+
+        
+
+            <div class="col-xl-6 describtion">
                 <h3>TM Grape, acrygel, №10 pink (50g)</h3>
     
                 <div>
@@ -76,7 +360,7 @@
                      </div> 
                 </div>
                 <div>
-                    <button> в корзину</button> <img src="img/like.svg" alt="">
+                    <button> в корзину</button> <i id="heart" class="fa-solid fa-heart"></i>
                 </div>
     
                 <p>описание</p>
@@ -90,158 +374,218 @@
             </div>
         </div>
         
-        <div class="miniatures">
-            <img src="img/best2.png" alt="">
-            <img src="img/Product Big.png" alt="">
-            <img src="img/miniature3.jpg" alt="">
-        </div>
-        
-        <div class="reflectHeader">
-
-           <div>
-                Отзывы ПОКУПАТЕЛЕЙ <br>
-                <span>( 4 отзыва ) </span>  
-            </div> 
+        <div class=" row ">
+            <div class="col-xl-12 reflectHeader">
+                <div>
+                    Отзывы ПОКУПАТЕЛЕЙ <br>
+                    <span>( 4 отзыва ) </span>  
+                </div> 
+               
+                <div class="rate">
+                    <a  class="star" href="#"></a>
+                    <a  class="star" href="#"></a>
+                    <a  class="star" href="#"></a>
+                    <a  class="star" href="#"></a>
+                    <a  class="star" href="#"></a>
+                </div>
+    
+                <div>4.2 / 5</div>
+    
+                <div> Добавить отзыв</div>
+            </div>
            
-            <div class="rate">
-                <a  class="star" href="#"></a>
-                <a  class="star" href="#"></a>
-                <a  class="star" href="#"></a>
-                <a  class="star" href="#"></a>
-                <a  class="star" href="#"></a>
-            </div>
-
-            <div>4.2 / 5</div>
-
-            <div> Добавить отзыв</div>
         </div>
 
-        <div class="reflect">
-        
-            <div class="name">
-                Мария <br>
-                Санкт-Петербург <br>
-                06 / 07 / 2021 <br>
-            </div>
-
-            <div>
-                <div class="rotate">
-                    безупречный!
-                    <div class="rate">
-                        <a  class="star" href="#"></a>
-                        <a  class="star" href="#"></a>
-                        <a  class="star" href="#"></a>
-                        <a  class="star" href="#"></a>
-                        <a  class="star" href="#"></a>
+        <div class="row ">
+            <div class="col-xl-12 reflect">
+                <div class="name">
+                    Мария <br>
+                    Санкт-Петербург <br>
+                    06 / 07 / 2021 <br>
+                </div>
+    
+                <div>
+                    <div class="rotate">
+                        безупречный!
+                        <div class="rate">
+                            <a  class="star" href="#"></a>
+                            <a  class="star" href="#"></a>
+                            <a  class="star" href="#"></a>
+                            <a  class="star" href="#"></a>
+                            <a  class="star" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="text">
+                        Очень довольна покупкой, акригель пластичный и удобен в моделировании. Буду использовать в работе и дальше, всем рекомендую!
+                    </div>
+                    <div>
+                        Читать еще
                     </div>
                 </div>
-                <div class="text">
-                    Очень довольна покупкой, акригель пластичный и удобен в моделировании. Буду использовать в работе и дальше, всем рекомендую!
-                </div>
-                <div>
-                    Читать еще
-                </div>
             </div>
-        </div>
-        <div class="reflect">
         
-            <div class="name">
-                Ольга <br>
-                Пенза <br>
-                26 / 03 / 2021 <br>
-            </div>
+            
+        </div>
 
-            <div>
-                <div class="rotate">
-                    Отличный акригель
+        <div class="row reflectWrapper">
+            <div class="col-xl-12 reflect">
+                <div class="name">
+                    Ольга <br>
+                    Пенза <br>
+                    26 / 03 / 2021 <br>
+                </div>
 
-                    <div class="rate">
-                        <a  class="star" href="#"></a>
-                        <a  class="star" href="#"></a>
-                        <a  class="star" href="#"></a>
-                        <a  class="star" href="#"></a>
-                        <a  class="star" href="#"></a>
+                <div>
+                    <div class="rotate">
+                        Отличный акригель
+
+                        <div class="rate">
+                            <a  class="star" href="#"></a>
+                            <a  class="star" href="#"></a>
+                            <a  class="star" href="#"></a>
+                            <a  class="star" href="#"></a>
+                            <a  class="star" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="text">
+                        Прост в использовании, хорошо наносится и не растекается. Бренд имеет большую палитру цветов.
+                    </div>
+                    <div>
+                        Читать еще
                     </div>
                 </div>
-                <div class="text">
-                    Прост в использовании, хорошо наносится и не растекается. Бренд имеет большую палитру цветов.
-                </div>
-                <div>
-                    Читать еще
-                </div>
             </div>
+               
         </div>
         
         
         
 
-        <div class="bestSellersHeader">
-            <h2>Тебе также может понравиться</h2>
-            <img src="img/arrowR.svg" alt="">
-        </div>
-
-
-        <div class="bestSellers">
-            <div>TM Grape professional, franch base №7 (50g) 
-                <span>850 ₽</span> 
-                 </div>
-             <div>Linto beauty, BASE RUBBER (15)
-                 <span>1 200 ₽</span> 
-             </div>
-             <div>Grape professional, Extra base (50g)
-                 <span>1000 ₽</span> 
-             </div>
-             <div>Beautix, UniGel System №1003
-                 <span>1 800 ₽ ₽</span> 
-             </div>
-        </div>
-
-        <div class="footer">
-            <ul>
-                <li>Магазины</li>
-                <li>г. Пенза, Урицкого/Славы 74/9 <br>тел: 8(967)441-00-23</li>
-                <li>г. Пенза, 1-й пр. Онежского, 4 <br>ТЦ Онежский, 2 этаж<br> тел: 8(967)442-85-35</li>
-            </ul>
-            <ul>
-                <li>Контакты</li>
-                <li>ditanails@yandex.ru</li>
-                <li>ditanails-opt@yandex.ru</li>
-                <li>8(967)441-00-23</li>
-            </ul>
-            <ul>
-                <li>Покупателям</li>
-                <li>Оплата и доставка</li>
-                <li>Возврат</li>
-            </ul>
-            <ul>
-                <li>Подписаться на нашу рассылку</li>
-                <li>
-                    <label for="Email"><img src="img/arrowR.svg" alt=""></label>
-                    <input id="Email" type="text" placeholder="E-mail">
-                    <hr>
-                </li>
-                <li> 
-                    
-                    <input type="checkbox"> Да, я хочу получать новости и рекламу <br> 
-                    сайта ditanails.ru по email, и я прочитал,<br> 
-                    понял и принимаю раздел <span>политика <br>
-                        конфиденциальности</span>  этого сайта.
-                </li>
-            </ul>
-        </div>
-
-        <div class="footerLine">
-            <div>Политика конфиденциальности</div>
-            <div>
-                <i class="fa-brands fa-vk"></i>
-                <i class="fa-brands fa-telegram"></i>
+        <div class="row ">
+            <div class="col-xl-12 bestSellersHeader">
+                <h2>Тебе также может понравиться</h2>
+                <a href="catalog.html"><img src="img/arrowR.svg" alt="перейти в каталог"></a>
             </div>
-            <div>Сайт разработан: Slepuhina Natalia </div>
-
-
+            
         </div>
+        
+        <div class="row bestSellers">
+           
+                <div class="col-xl-3">
+                    TM Grape professional, franch base №7 (50g) 
+                    <span>850 ₽</span> 
+                    </div>
+                <div class="col-xl-3">
+                    Linto beauty, BASE RUBBER (15)
+                    <span>1 200 ₽</span> 
+                </div>
+                <div class="col-xl-3">
+                    Grape professional, Extra base (50g)
+                    <span>1000 ₽</span> 
+                </div>
+                <div class="col-xl-3">
+                    Beautix, UniGel System №1003
+                    <span>1 800 ₽ ₽</span> 
+                </div>
+           
+        </div>
+
+        <div class="row footer">
+            <div class="col-xl-3">
+                 <ul>
+                     <li>Магазины</li>
+                     <li>г. Пенза, Урицкого/Славы 74/9 <br>тел: 8(967)441-00-23</li>
+                     <li>г. Пенза, 1-й пр. Онежского, 4 <br>ТЦ Онежский, 2 этаж<br> тел: 8(967)442-85-35</li>
+                 </ul>
+            </div>
+            <div class="col-xl-3">
+                 <ul>
+                     <li>Контакты</li>
+                     <li><a href="#">ditanails@yandex.ru</a></li>
+                     <li><a href="#">ditanails-opt@yandex.ru</a></li>
+                     <li>8(967)441-00-23</li>
+                 </ul>
+            </div>
+            <div class="col-xl-3">
+                 <ul>
+                     <li><a href="#">Покупателям</a> </li>
+                     <li><a href="#">Оплата и доставка</a></li>
+                     <li><a href="#">Возврат</a></li>
+                 </ul>
+            </div>
+            <div class="col-xl-3">
+                 <ul>
+                     <li>Подписаться на нашу рассылку</li>
+                     <li>
+                         <label for="Email"><img src="img/arrowR.svg" alt=""></label>
+                         <input id="Email" type="text" placeholder="E-mail">
+                         <hr>
+                     </li>
+                     <li> 
+                         
+                         <input type="checkbox"> Да, я хочу получать новости и рекламу <br> 
+                         сайта ditanails.ru по email, и я прочитал,<br> 
+                         понял и принимаю раздел <span>политика <br>
+                             конфиденциальности</span>  этого сайта.
+                     </li>
+                 </ul>
+            </div>
+         </div>
+ 
+         <div class="footerLine">
+             <div><a href="#">Политика конфиденциальности</a></div>
+             <div>
+                 <a href="https://vk.com/ditanails_penza"><i class="fa-brands fa-vk"></i></a>
+                 <a href="https://t.me/ditanails_penza"><i class="fa-brands fa-telegram"></i></a>
+             </div>
+             <div>Сайт разработан: Slepuhina Natalia </div>
+ 
+ 
+         </div>
 
     </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+    <script>
+        const like = document.getElementById('heart')
+        like.addEventListener('click', function () {
+            like.classList.toggle('blackHeart')
+        })
+        $('#serch').on('click', function (){
+            $('#search').css('display','block')
+        })
+        $('#brandsCollapse').on('click', function(){
+            $('#brandsCard').css('display', 'flex')
+            $('#catalogCard').css('display', 'none')
+            $('#marketCard').css('display', 'none')
+            $('#colorCard').css('display', 'none')
+        })
+        $('#catalogCollapse').on('click', function(){
+            $('#catalogCard').css('display', 'flex')
+            $('#brandsCard').css('display', 'none')
+            $('#marketCard').css('display', 'none')
+            $('#colorCard').css('display', 'none')
+        })
+        $('#colorCollapse').on('click', function(){
+            $('#colorCard').css('display', 'flex')
+            $('#catalogCard').css('display', 'none')
+            $('#marketCard').css('display', 'none')
+            $('#brandsCard').css('display', 'none')
+        })
+        $('#marketCollapse').on('click', function(){
+            $('#marketCard').css('display', 'flex')
+            $('#catalogCard').css('display', 'none')
+            $('#brandsCard').css('display', 'none')
+            $('#colorCard').css('display', 'none')
+        })
+        
+    </script>
+    <script type="text/javascript" src="script/script.js"></script>
 </body>
 </html>  
 
