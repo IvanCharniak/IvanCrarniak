@@ -1,3 +1,6 @@
+a:hover {
+    color: black;
+}
 .brands img:hover, .icons img:hover {
     animation: myAnimBrand 3s ease 0s 1 normal forwards;
     @keyframes myAnimBrand {
@@ -60,7 +63,7 @@ img[src*='search']:hover{
 .header img[src*='Union']:hover{
    
 
-    animation: myAnimlogo 0.4s ease 1s 1 normal forwards;
+    animation: myAnimlogo 2.4s ease 1s 1 normal forwards;
 
     @keyframes myAnimlogo {
         0%,

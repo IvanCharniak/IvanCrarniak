@@ -32,6 +32,10 @@ a {
   color: #1A1A1A;
 }
 
+a:hover {
+  color: black;
+}
+
 .brands img:hover, .icons img:hover {
   -webkit-animation: myAnimBrand 3s ease 0s 1 normal forwards;
           animation: myAnimBrand 3s ease 0s 1 normal forwards;
@@ -141,8 +145,8 @@ img[src*='search']:hover {
 }
 
 .header img[src*='Union']:hover {
-  -webkit-animation: myAnimlogo 0.4s ease 1s 1 normal forwards;
-          animation: myAnimlogo 0.4s ease 1s 1 normal forwards;
+  -webkit-animation: myAnimlogo 2.4s ease 1s 1 normal forwards;
+          animation: myAnimlogo 2.4s ease 1s 1 normal forwards;
 }
 @-webkit-keyframes myAnimlogo {
   0%,
@@ -398,6 +402,7 @@ img[src*='arrowR'] {
 .sale img {
   display: block;
   margin-top: 27px;
+  width: -webkit-fill-available;
 }
 
 .novinkiHeader, .akciiHeader, .bestSellersHeader, .joinHeader, .brandsHeader {
@@ -512,7 +517,21 @@ img[src*='arrowR'] {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-.bestSellers div {
+.bestSellers a {
+  width: 210px;
+  height: 370px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 500;
+  line-height: 175%;
+  text-transform: uppercase;
+}
+.bestSellers a > div {
   width: 210px;
   height: 370px;
   display: -webkit-box;
@@ -527,16 +546,16 @@ img[src*='arrowR'] {
   line-height: 175%;
   text-transform: uppercase;
 }
-.bestSellers div:nth-child(1) {
+.bestSellers a:nth-child(1) div {
   background: url("../img/best1.png") no-repeat top 25px center;
 }
-.bestSellers div:nth-child(2) {
+.bestSellers a:nth-child(2) div {
   background: url("../img/best2.png") no-repeat top 25px center;
 }
-.bestSellers div:nth-child(3) {
+.bestSellers a:nth-child(3) div {
   background: url("../img/best3.png") no-repeat top 25px center;
 }
-.bestSellers div:nth-child(4) {
+.bestSellers a:nth-child(4) div {
   background: url("../img/best4.png") no-repeat top 25px center;
 }
 
@@ -715,11 +734,11 @@ img[src*='arrowR'] {
 
 body {
   background: none;
-  height: 4000px;
+  overflow-x: hidden;
 }
 
 .path {
-  margin-top: 100px;
+  margin-top: 150px;
   font-family: "Inter", "sans-serif";
   font-weight: 300;
   line-height: 17px;
@@ -882,6 +901,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .reflectHeader div:first-child {
   font-style: normal;
@@ -1274,9 +1295,16 @@ div.fio > div {
   font-weight: 400;
   font-size: 37px;
   line-height: 45px;
-  margin-left: 319px;
-  margin-top: 110px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 128px;
   margin-bottom: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 div.profileFrame {
@@ -1291,7 +1319,6 @@ div.profileFrame {
   height: 250px;
   border: 1px solid #1A1A1A;
   border-radius: 20px;
-  position: relative;
   padding: 30px;
   margin-bottom: 40px;
 }
@@ -1314,9 +1341,11 @@ div.profileFrame {
   font-size: 14px;
   line-height: 140%;
   color: #5A5A5A;
-  position: absolute;
   bottom: 0px;
+  display: block;
   left: 30px;
+  text-align: end;
+  margin-top: 100px;
 }
 
 .profileMenu {
@@ -1398,6 +1427,14 @@ div.bonusCard {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+.favItem i {
+  font-size: 16px;
+  color: #9fbfd9;
+}
+.favItem i:hover, .favItem i:target, .favItem i:focus, .favItem i:active {
+  color: #1A1A1A;
+  margin-right: 10px;
 }
 
 .favWrapper {
@@ -1506,13 +1543,6 @@ iframe {
 
 .colorWrapper {
   margin-top: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .beautix {
@@ -1710,6 +1740,15 @@ iframe {
     top: 90px;
   }
 
+  #profileCardWrapper > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
   .header {
     position: relative;
   }
@@ -1746,6 +1785,7 @@ iframe {
 
   .sale h1 {
     font-size: 40px;
+    margin-top: 20px;
   }
 
   .akcii img[src*='akcii'] {
@@ -1804,6 +1844,11 @@ iframe {
 @media all and (max-width: 500px) {
   iframe {
     width: 480px !important;
+  }
+
+  .cardImg {
+    width: 300px;
+    height: 220px;
   }
 }
 @media all and (max-width: 400px) {

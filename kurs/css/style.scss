@@ -95,6 +95,7 @@
     img {
         display: block;
         margin-top: 27px;
+        width: -webkit-fill-available;
     }
 
 
@@ -148,6 +149,8 @@
     div:nth-child(4){
         background: url('../img/novinki4.png') no-repeat top 25px center
     }
+
+    
 }
 
 .akcii {
@@ -183,8 +186,17 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-
-    div {
+    a{
+        width: 210px;
+        height: 370px;
+        display: flex;
+        flex-direction: column;
+      
+        font-weight:$medium;
+        line-height: 175%;
+        text-transform: uppercase;
+    }
+    a>div {
         width: 210px;
         height: 370px;
         display: flex;
@@ -194,16 +206,16 @@
         line-height: 175%;
         text-transform: uppercase;
     }
-    div:nth-child(1){
+    a:nth-child(1) div{
         background: url('../img/best1.png') no-repeat top 25px center
     }
-    div:nth-child(2){
+    a:nth-child(2) div{
         background: url('../img/best2.png') no-repeat top 25px center
     }
-    div:nth-child(3){
+    a:nth-child(3) div{
         background: url('../img/best3.png') no-repeat top 25px center
     }
-    div:nth-child(4){
+    a:nth-child(4) div{
         background: url('../img/best4.png') no-repeat top 25px center
     }
 }
@@ -335,9 +347,9 @@
 
 // Product page 
 body{background: none;
-height: 4000px;}
+overflow-x: hidden;}
 .path {
-margin-top: 100px;
+margin-top: 150px;
 font-family: $inter;
 font-weight: $light;
 line-height: 17px;
@@ -467,6 +479,7 @@ color: #5A5A5A;
     display: flex;
     align-items: flex-start;
     flex-direction: row;
+    flex-wrap: wrap;
 
     div:first-child{
         font-style: normal;
@@ -826,12 +839,15 @@ color:$black
 }
 
 div.fio > div {
-font-weight: 400;
-font-size: 37px;
-line-height: 45px;
-margin-left: 319px;
-margin-top: 110px;
-margin-bottom: 70px;
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 128px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
 }
 div.profileFrame{
     position: absolute;
@@ -847,7 +863,6 @@ div.profileFrame{
         height: 250px;
         border: 1px solid $black;
         border-radius: 20px;
-        position: relative;
         padding: 30px;
         margin-bottom: 40px;
     
@@ -865,17 +880,19 @@ div.profileFrame{
                 margin-top: 15px;
             }
             p:last-child {
-                font-family: $inter;
-                font-weight: $light;
-                font-size: $f14;
+                font-family: "Inter", "sans-serif";
+                font-weight: 300;
+                font-size: 14px;
                 line-height: 140%;
                 color: #5A5A5A;
-
-                position: absolute;
                 bottom: 0px;
+                display: block;
                 left: 30px;
+                text-align: end;
+                margin-top: 100px;
             }
 }
+            
 
 .profileMenu{
 
@@ -942,6 +959,14 @@ div.bonusCard{
             bottom: 0;
             right: 0;
         }
+            i {
+                font-size: 16px;
+                    color: #9fbfd9;
+                    &:hover, &:target, &:focus, &:active{
+                        color: $black;
+                        margin-right: 10px;
+                }
+            }
 }
 .favWrapper{
     display: none;
@@ -1052,8 +1077,8 @@ iframe {
 }
 .colorWrapper{
     margin-top: 100px;
-    display: flex;
-    flex-direction: column;
+ 
+    
     
 }
 .beautix{
