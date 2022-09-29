@@ -944,8 +944,11 @@ div.bonusCard{
     justify-content: space-between;
     margin-bottom: 40px;
     position: relative;
-        img{
-            height: auto;
+    align-items: center;
+        &>img{
+            height: 77px;
+            width: 98px
+      
         }
         p{
             display: block;
@@ -1045,7 +1048,7 @@ iframe {
         }
     }
     &>input:last-child{
-        width: 555px;
+        width: -webkit-fill-available;
         background-color: $black;
         height: 40px;
         color: $white;

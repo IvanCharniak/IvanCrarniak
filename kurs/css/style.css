@@ -1412,9 +1412,13 @@ div.bonusCard {
           justify-content: space-between;
   margin-bottom: 40px;
   position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.favItem img {
-  height: auto;
+.favItem > img {
+  height: 77px;
+  width: 98px;
 }
 .favItem p {
   display: block;
@@ -1517,7 +1521,7 @@ iframe {
   font-weight: 300;
 }
 #formaProfile > input:last-child {
-  width: 555px;
+  width: -webkit-fill-available;
   background-color: #1A1A1A;
   height: 40px;
   color: #ffffff;
@@ -1854,6 +1858,25 @@ iframe {
 @media all and (max-width: 400px) {
   iframe {
     width: 380px !important;
+  }
+}
+@media all and (max-width: 560px) {
+  .cardWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .cardButton {
+    white-space: inherit;
+    width: 305px;
   }
 }
 
